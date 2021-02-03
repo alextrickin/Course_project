@@ -1,18 +1,21 @@
 /*Fonts*/
 
 /*Обычный 400*/
+
 @font-face {
   font-family: 'OpenSans Regular';
   src: url(/fonts/OpenSans-Regular.ttf);
 }
 
 /*Полужирный 600*/
+
 @font-face {
   font-family: 'OpenSans SemiBold';
   src: url(/fonts/OpenSans-SemiBold.ttf);
 }
 
 /*Общие настройки*/
+
 * {
   font-family: "OpenSans Regular", sans-serif;
   font-size: 18px;
@@ -30,9 +33,14 @@ button {
   background-color: transparent;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .container {
@@ -40,6 +48,8 @@ ul {
   max-width: 1920px;
   min-width: 320px;
 }
+
+/*Header*/
 
 .header-top {
   padding: 12px 15px;
@@ -72,9 +82,25 @@ ul {
   justify-content: space-between;
 }
 
+.header-top__list-item {
+  padding: 0 6px 8px 6px;
+}
+
 .header-top__list-item_link {
   font-family: "OpenSans SemiBold", sans-serif;
   font-size: 18px;
+}
+
+.header-top__list-item_link:hover {
+  color: #C283F3;
+}
+
+.header-top__list-item_link:active {
+  color: #7943A4;
+}
+
+.header-top__list-item_link:focus {
+  outline: 2px solid #7943A4;
 }
 
 .header-top__find-button {
@@ -91,18 +117,22 @@ ul {
   display: none;
 }
 
-.header-top__enter_title{  
+.header-top__enter_title {
   line-height: 17px;
   padding-left: 7px;
 }
 
-/*
-@media (max-width: 320px) {
-  .container{
-    padding: 12px 15px;
-  }
-}  
-*/
+.header-top__enter:hover {
+  color: #C283F3;
+}
+
+.header-top__enter:active {
+  color: #7943A4;
+}
+
+.header-top__enter:focus {
+  outline: 2px solid #7943A4;
+}
 
 @media (min-width: 768px) and (max-width: 1920px) {
   .header-top {
