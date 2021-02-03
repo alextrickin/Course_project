@@ -1,0 +1,145 @@
+/*Fonts*/
+
+/*Обычный 400*/
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+/*Полужирный 600*/
+@font-face {
+  font-family: 'OpenSans SemiBold';
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+}
+
+/*Общие настройки*/
+* {
+  font-family: "OpenSans Regular", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1920px;
+  min-width: 320px;
+}
+
+.header-top {
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.header-top__burger-button {
+  min-width: 20px;
+  min-height: 15px;
+  background-image: url(../img/Burger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-top__title_logo-image {
+  width: 97px;
+  height: 22px;
+}
+
+.header-top__navigation {
+  display: none;
+}
+
+.header-top__list {
+  display: flex;
+  min-width: 896px;
+  justify-content: space-between;
+}
+
+.header-top__list-item_link {
+  font-family: "OpenSans SemiBold", sans-serif;
+  font-size: 18px;
+}
+
+.header-top__find-button {
+  min-width: 16px;
+  min-height: 16px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-top__enter {
+  display: none;
+}
+
+.header-top__enter_title{  
+  line-height: 17px;
+  padding-left: 7px;
+}
+
+/*
+@media (max-width: 320px) {
+  .container{
+    padding: 12px 15px;
+  }
+}  
+*/
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .header-top {
+    padding: 30px 50px;
+  }
+  .header-top__burger-button {
+    min-width: 36px;
+    min-height: 28px;
+  }
+  .header-top__title_logo-image {
+    width: 188px;
+    height: 42px;
+  }
+  .header-top__find-button {
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-top {
+    padding: 30px 160px;
+  }
+  .header-top__navigation {
+    display: flex;
+  }
+  .header-top__burger-button {
+    display: none;
+  }
+  .header-top__title_logo-image {
+    width: 173px;
+    height: 40px;
+  }
+  .header-top__find-button {
+    display: none;
+  }
+  .header-top__enter {
+    display: flex;
+  }
+}
