@@ -1,0 +1,60 @@
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;  
+}
+
+ul{
+  margin: 0;
+  padding: 0;    
+} 
+
+.container{
+  max-width: 1920px;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.header-top__burger-button{
+  min-width: 20px;
+  min-height: 15px;   
+  background-image: url(../img/Burger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-top__navigation{
+  *display: none;
+}
+
+.header-top__list{
+  outline: 1px solid red;
+  display: flex;
+}
+
+.header-top__find-button{
+  min-width: 16px;
+  min-height: 16px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/Search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-top__enter{
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {}
