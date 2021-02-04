@@ -37,6 +37,11 @@ button:active, button:focus {
   outline: none;
 }
 
+option{
+  margin: 0;
+  padding: 0; 
+}
+
 ul {
   margin: 0;
   padding: 0;

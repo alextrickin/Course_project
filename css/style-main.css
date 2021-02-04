@@ -1,5 +1,5 @@
 .main-top {
-  position: relative;
+  position: relative;  
 }
 
 .swiper-slide {
@@ -37,11 +37,77 @@
 
 
 .main-top__list{
-  outline: 1px solid red;
-
   position: absolute;
-  left: 0;
+  left: 160px;
   top: 0;
   display: flex;
   z-index: 1;
+}
+
+.main-top__list-item_select{  
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.choices, .choices__inner, .choices__input, .choices__input--cloned, .choices__list, .choices__list--multiple, .choices__list--single, .choices__list--dropdown, .choices__item, .choices__item--selectable, .choices__item--disabled, .choices__item--choice, .choices__group, .choices__heading, .choices__button, .is-active, .is-focused, .is-open, .is-disabled, .is-highlighted, .is-selected, .is-flipped, .is-highlighted {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.choices {
+  margin-left: 58px;
+  width: 176px !important;
+  border-radius: 10px !important;
+}
+
+.choices__inner {
+  position: relative;
+  margin: -2px 0 -2px -2px !important; 
+  padding: 9px 15px 11px !important;
+  width: 146px !important;
+  min-height: 10px;
+  border-radius: 10px !important;
+  background-color: transparent !important;
+  border: none !important;
+  z-index: 2;
+}
+
+.choices__item--choice {
+  padding-top: 7px !important;
+  padding-bottom: 10px !important;
+  padding-left: 15px !important;
+}
+
+.choices__item:nth-child(2) {
+  padding-top: 20px !important;
+}
+
+.choices__placeholder {  
+  opacity: 1;
+}
+
+.choices__list--dropdown {  
+  margin-top: -37px !important; 
+  *margin-top: -39px !important; 
+  margin-left: -2px !important;  
+  border-radius: 10px;
+  border: none !important;
+}
+
+.choices[data-type*=select-one]:after {
+  width: 12px;
+  height: 6px;
+  background-image: url(/img/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  background-size: contain;
+  z-index: 3;
+}
+
+.choices[data-type*=select-one].is-open:after {
+  background-image: url(/img/arrow-up.svg);
 }

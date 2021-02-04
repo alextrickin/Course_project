@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style-main.css">
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/choices.min.js"></script>
   <script src="js/index.js"></script>
 </head>
 
@@ -89,10 +90,8 @@
               <option value="Catlin">Джордж Кетлин</option>              
               <option value="Krihuber">Йозеф Крихубер</option>              
               <option value="Sadovnikov">Василий Садовников</option>              
-              </select>
-<!--
-            <select name="real" id="">Реализм</select>            
--->
+            </select>
+
           </li>
           <li class="main-top__list-item">
             <a class="main-top__list-item_link" href="#">Импрессионизм</a>
@@ -108,6 +107,15 @@
           </li>
         </ul>
       </nav>
+      <script>
+        const element = document.querySelector('.custom-select');
+        const choices = new Choices(element, {
+          searchEnabled: false,
+          shouldSort: false,
+          position: 'bottom',
+          itemSelectText: '',
+        });
+      </script>
       <span style="color: red;">Поиск по сайту</span>
     </div>
     <!--
