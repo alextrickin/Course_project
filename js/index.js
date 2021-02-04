@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters  
-    direction: 'vertical',  
+    // Optional parameters    
     loop: true,
 
     // If we need pagination
@@ -9,11 +8,11 @@ window.addEventListener('DOMContentLoaded', function () {
       el: '.swiper-pagination',
       clickable: 'true'
     },
-    
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  })  
+    },  
+  });
 })
