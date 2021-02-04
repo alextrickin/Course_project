@@ -51,7 +51,7 @@ ul {
 
 /*Header*/
 
-.header-top {
+.header {
   padding: 12px 15px;
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ ul {
   background-color: black;
 }
 
-.header-top__burger-button {
+.header__burger-button {
   min-width: 20px;
   min-height: 15px;
   background-image: url(../img/Burger.svg);
@@ -67,43 +67,43 @@ ul {
   background-size: contain;
 }
 
-.header-top__title_logo-image {
+.header__title_logo-image {
   width: 97px;
   height: 22px;
 }
 
-.header-top__navigation {
+.header__navigation {
   display: none;
 }
 
-.header-top__list {
+.header__list {
   display: flex;
   min-width: 896px;
   justify-content: space-between;
 }
 
-.header-top__list-item {
+.header__list-item {
   padding: 0 6px 8px 6px;
 }
 
-.header-top__list-item_link {
+.header__list-item_link {
   font-family: "OpenSans SemiBold", sans-serif;
   font-size: 18px;
 }
 
-.header-top__list-item_link:hover {
+.header__list-item_link:hover {
   color: #C283F3;
 }
 
-.header-top__list-item_link:active {
+.header__list-item_link:active {
   color: #7943A4;
 }
 
-.header-top__list-item_link:focus {
+.header__list-item_link:focus {
   outline: 2px solid #7943A4;
 }
 
-.header-top__find-button {
+.header__find-button {
   min-width: 16px;
   min-height: 16px;
   border: none;
@@ -113,63 +113,63 @@ ul {
   background-size: contain;
 }
 
-.header-top__enter {
+.header__enter {
   display: none;
 }
 
-.header-top__enter_title {
+.header__enter_title {
   line-height: 17px;
   padding-left: 7px;
 }
 
-.header-top__enter:hover {
+.header__enter:hover {
   color: #C283F3;
 }
 
-.header-top__enter:active {
+.header__enter:active {
   color: #7943A4;
 }
 
-.header-top__enter:focus {
+.header__enter:focus {
   outline: 2px solid #7943A4;
 }
 
 @media (min-width: 768px) and (max-width: 1920px) {
-  .header-top {
+  .header {
     padding: 30px 50px;
   }
-  .header-top__burger-button {
+  .header__burger-button {
     min-width: 36px;
     min-height: 28px;
   }
-  .header-top__title_logo-image {
+  .header__title_logo-image {
     width: 188px;
     height: 42px;
   }
-  .header-top__find-button {
+  .header__find-button {
     min-width: 30px;
     min-height: 30px;
   }
 }
 
 @media (min-width: 1920px) {
-  .header-top {
+  .header {
     padding: 30px 160px;
   }
-  .header-top__navigation {
+  .header__navigation {
     display: flex;
   }
-  .header-top__burger-button {
+  .header__burger-button {
     display: none;
   }
-  .header-top__title_logo-image {
+  .header__title_logo-image {
     width: 173px;
     height: 40px;
   }
-  .header-top__find-button {
+  .header__find-button {
     display: none;
   }
-  .header-top__enter {
+  .header__enter {
     display: flex;
   }
 }
