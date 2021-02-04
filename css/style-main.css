@@ -1,0 +1,36 @@
+.main-top {
+  position: relative;  
+}
+
+.swiper-slide {
+  min-height: 825px;
+}
+
+.swiper-slide img {  
+  object-fit: contain;
+  min-height: 825px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  --swiper-theme-color: white;
+  opacity: 1;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  --swiper-theme-color: white;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 1;
+}
