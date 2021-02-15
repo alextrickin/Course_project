@@ -44,8 +44,7 @@
   top: 0;
   min-height: 45px;
   min-width: 1760px;
-  background-color: black;
-  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -87,4 +86,12 @@
   color: white;
   border: none;
   border-bottom: 1px solid white;
+}
+
+.main-top__find-container_input-field::-webkit-input-placeholder {
+  color: white;
+}
+
+.main-top__find-container_input-field::-moz-placeholder {
+  color: white;
 }
