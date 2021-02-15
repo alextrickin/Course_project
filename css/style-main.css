@@ -36,20 +36,44 @@
 }
 
 
-.main-top__list{
+.main-top__navigation{  
+  padding-left: 160px;
+  padding-top: 21px;
   position: absolute;
-  left: 160px;
+  left: 0;
   top: 0;
-  display: flex;
+  min-height: 45px;
+  min-width: 1760px;
+  background-color: black;
+  opacity: 0.4;
   z-index: 1;
 }
 
-.main-top__list-item_select{  
+.main-top__list{
+  *position: absolute;
+  *left: 160px;
+  *top: 21px;
+  display: flex;
+  *z-index: 1;
+}
+
+.main-top__list-item_select{    
   border: none;
   color: white;
   background-color: transparent;
 }
 
+.main-top__list-item_link{
+  margin-right: 99px;
+}
+
+.main-top__list-item_link::after{
+  content: "\f107";
+  margin-left: 2px;
+  font-family: FontAwesome;
+}
+
+/*
 .choices, .choices__inner, .choices__input, .choices__input--cloned, .choices__list, .choices__list--multiple, .choices__list--single, .choices__list--dropdown, .choices__item, .choices__item--selectable, .choices__item--disabled, .choices__item--choice, .choices__group, .choices__heading, .choices__button, .is-active, .is-focused, .is-open, .is-disabled, .is-highlighted, .is-selected, .is-flipped, .is-highlighted {
   margin: 0 !important;
   padding: 0 !important;
@@ -111,3 +135,4 @@
 .choices[data-type*=select-one].is-open:after {
   background-image: url(/img/arrow-up.svg);
 }
+*/

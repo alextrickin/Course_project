@@ -79,11 +79,12 @@ ul {
 
 .header__navigation {
   display: none;
+  margin-left: -100px;
 }
 
-.header__list {
+.header__list {  
   display: flex;
-  min-width: 896px;
+  min-width: 900px;
   justify-content: space-between;
 }
 
