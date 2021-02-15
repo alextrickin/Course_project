@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="css/style-main.css">
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--
   <script src="js/choices.min.js"></script>
+  -->
   <script src="js/index.js"></script>
 </head>
 
@@ -77,44 +79,9 @@
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>  
+        <div class="swiper-button-next"></div>
       </div>
-    
-      <nav class="main-top__navigation">
-        <ul class="main-top__list">
-          <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Реализм</a>          
-          </li>
-          <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Импрессионизм</a>
-          </li>
-          <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Постимпрессионизм</a>
-          </li>
-          <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Авангард</a>
-          </li>
-          <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Футуризм</a>
-          </li>
-        </ul>
-      </nav>
-      <script>
-        const element = document.querySelector('.custom-select');
-        const choices = new Choices(element, {
-          searchEnabled: false,
-          shouldSort: false,
-          position: 'bottom',
-          itemSelectText: '',
-        });
-      </script>
-      <span style="color: red;">Поиск по сайту</span>
-    </div>
-    <!--
 
-
-        
-       
       <nav class="main-top__navigation">
         <ul class="main-top__list">
           <li class="main-top__list-item">
@@ -130,13 +97,18 @@
             <a class="main-top__list-item_link" href="#">Авангард</a>
           </li>
           <li class="main-top__list-item">
-            <a class="main-top__list-item_link" href="#">Авангард</a>
+            <a class="main-top__list-item_link" href="#">Футуризм</a>
           </li>
         </ul>
+        <div class="main-top__find-container">
+          <button class="main-top__find-container_find-button"></button>
+          <input class="main-top__find-container_input-field" name="find" type="text" placeholder="Поиск по сайту">
+        </div>
       </nav>
-      <span style="color: red;">Поиск по сайту</span>
-    
-    -->
+
+
+    </div>
+
   </main>
   <footer></footer>
 </body>
