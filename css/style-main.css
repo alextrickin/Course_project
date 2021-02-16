@@ -135,6 +135,41 @@
   outline: 2px solid #7943A4;
 }
 
+.main-top__submenu-list{  
+  padding: 40px;
+  position: absolute;
+  max-height: 220px;
+  max-width: 220px;
+  top: 66px;
+  background-color: #999;
+  background-clip: padding-box;
+  overflow-y: auto;  
+  overflow-x: hidden;    
+}
+
+
+.main-top__submenu-list-item{ 
+  outline: 1px solid red;   
+  float: left;
+  position: relative;  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  min-width: 206px;
+  background-color: transparent; 
+  font-size: 14px;
+  color: white;    
+}
+
+.main-top__submenu-list-item:not(:last-child){
+  margin-bottom: 20px;
+}  
+
+.main-top__submenu-list-item_link{
+  font-size: 14px;
+  background-color: initial;
+}
+
 @media (min-width: 1920px) {
   .main-top__navigation {
     display: flex;
