@@ -39,7 +39,7 @@
   padding-left: 160px;
   padding-top: 21px;
   position: absolute;
-  display: flex;
+  display: none;
   left: 0;
   top: 0;
   min-height: 45px;
@@ -94,4 +94,22 @@
 
 .main-top__find-container_input-field::-moz-placeholder {
   color: white;
+}
+
+.main-top__list-item_link:hover {
+  color: #C283F3;
+}
+
+.main-top__list-item_link:active {
+  color: #7943A4;
+}
+
+.main-top__list-item_link:focus {
+  outline: 2px solid #7943A4;
+}
+
+@media (min-width: 1920px) {
+  .main-top__navigation{
+    display: flex;
+  }
 }
