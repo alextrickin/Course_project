@@ -76,6 +76,10 @@
   color: #7943A4;
 }
 
+.main-top__list-item_link:focus::after {
+  content: "\f106";
+}
+
 .main-top__list-item_link:focus {
   outline: 2px solid #7943A4;
 }
