@@ -46,7 +46,7 @@
   max-height: 45px;
   min-width: 1760px;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-top__list {
@@ -287,9 +287,30 @@
 
 .main-top__description_item {
   padding-top: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 95px;
   max-width: 560px;
-  line-height: 28px; 
-  letter-spacing: 0.9px; 
+  line-height: 28px;
+  letter-spacing: 0.9px;
 }
 
+.main-top__description_button {
+  min-width: 314px;
+  min-height: 70px;
+  border-radius: 100px;
+  background-color: #9D5CD0;
+  color: white;
+}
+
+.main-top__description_button:hover {
+  border: 3px solid #D1A9F0;
+}
+
+.main-top__description_button:focus {
+  border: 3px solid white;
+  box-sizing: padding-box;
+}
+
+.main-top__description_button:active {
+  background-color: #7943A4;
+  border: 2px solid #D1A9F0;
+}
