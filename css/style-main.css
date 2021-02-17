@@ -183,7 +183,7 @@
   position: absolute;
   min-width: 300px;
   min-height: 39px;
-  top:-40px;
+  top:-41px;
   left: -40px;
   background-color: #999;
 }
@@ -193,7 +193,7 @@
   position: absolute;
   min-width: 300px;
   min-height: 18px;
-  top: 41px;
+  top: 42px;
   left: -40px;
   background-color: #999;
 }  
@@ -208,13 +208,22 @@
   background-color: #999;
 }  
 
+.main-top__submenu-list-item:hover {
+  outline: 2px solid #9D5CD0;
+} 
+
+.main-top__submenu-list-item:active {
+  outline: 2px solid #D1A9F0;
+  background-color:  rgba(194, 131, 243, 0.4);
+} 
+
 .main-top__submenu-list-item_link::before{
   content: '';
   position: absolute;
   min-width: 40px;
   min-height: 50px;
   top: -3px;
-  left: -40px;
+  left: -42px;
   background-color: #999;  
 }
 
@@ -224,7 +233,7 @@
   min-width: 38px;
   min-height: 50px;
   top: -3px;
-  left: 220px;
+  left: 222px;
   background-color: #999;  
 }
 
