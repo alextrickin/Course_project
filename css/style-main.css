@@ -45,7 +45,6 @@
   min-height: 45px;
   max-height: 45px;
   min-width: 1760px;
-  *max-width: 1800px;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
