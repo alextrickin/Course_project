@@ -1,5 +1,5 @@
 .main-top {
-  position: relative;
+  position: relative;  
 }
 
 .swiper-slide {
@@ -314,3 +314,13 @@
   background-color: #7943A4;
   border: 2px solid #D1A9F0;
 }
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .main-top__navigation {
+    padding-left: 160px;
+  }
+  .main-top__description {    
+    padding-left: 160px;
+  }
+
+}  
