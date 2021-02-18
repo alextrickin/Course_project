@@ -1,3 +1,5 @@
+/*Main-top (slider)*/
+
 .main-top {
   position: relative;
 }
@@ -391,6 +393,8 @@
   }
 }
 
+/*О нас*/
+
 .about-us {
   padding-top: 50px;
   padding-right: 14px;
@@ -407,4 +411,40 @@
   padding-top: 15px;
   font-size: 14px;
   line-height: 28px;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .about-us {
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-left: 52px;
+  }
+  .about-us__title {
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .about-us__item {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-us {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 160px;
+    max-width: 1080px;
+  }
+  .about-us__title {
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .about-us__item {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 32px;
+  }
 }
