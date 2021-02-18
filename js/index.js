@@ -1,18 +1,18 @@
 window.addEventListener('DOMContentLoaded', function () {
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.main-top-swiper', {
     // Optional parameters    
     loop: true,
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.main-top-pagination',
       clickable: 'true'
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },  
+      nextEl: '.main-top-button-prev',
+      prevEl: '.main-top-button-next',
+    },
   });
 })
