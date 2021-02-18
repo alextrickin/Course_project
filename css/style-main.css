@@ -1,14 +1,17 @@
 .main-top {
-  position: relative;  
+  position: relative;    
+  display: flex;
+  justify-content: center;  
 }
 
 .swiper-slide {
-  min-height: 800px;
+  width: 100%;
 }
 
 .swiper-slide img {
-  object-fit: contain;
-  min-height: 800px;
+  width: 100%;
+  object-fit: cover;  
+  min-height: 305px;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -277,25 +280,40 @@
 }
 
 .main-top__description {
-  position: relative;
-  top: -665px;
-  padding-left: 160px;
-  max-width: 597px;
+  position: absolute;  
+  display: flexbox;
+  justify-content: center;    
+  top: 30px;
+  width: 100%;
   color: white;
   z-index: 1;
 }
 
-.main-top__description_item {
-  padding-top: 18px;
-  margin-bottom: 95px;
-  max-width: 560px;
-  line-height: 28px;
-  letter-spacing: 0.9px;
+.main-top__description_title {   
+  margin: auto;
+  max-width: 80%;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
 }
 
-.main-top__description_button {
-  min-width: 314px;
-  min-height: 70px;
+.main-top__description_item {    
+  margin: auto;
+  padding-top: 15px;
+  margin-bottom: 43px;  
+  max-width: 90%;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.main-top__description_button {    
+  margin: auto;
+  display: block;
+  min-width: 200px;
+  min-height: 40px;  
+  font-size: 12px;
   border-radius: 100px;
   background-color: #9D5CD0;
   color: white;
@@ -316,11 +334,5 @@
 }
 
 @media (min-width: 768px) and (max-width: 1920px) {
-  .main-top__navigation {
-    padding-left: 160px;
-  }
-  .main-top__description {    
-    padding-left: 160px;
-  }
 
 }  

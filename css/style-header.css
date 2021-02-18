@@ -47,8 +47,8 @@ h1 {
   padding: 0;
   margin: 0;
   font-family: "OpenSans Bold";
-  font-size: 72px;
-  line-height: 85px;
+  *font-size: 72px;
+  *line-height: 85px;
 }
 
 ul {
