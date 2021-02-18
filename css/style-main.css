@@ -390,3 +390,21 @@
     letter-spacing: 0.9px;
   }
 }
+
+.about-us {
+  padding-top: 50px;
+  padding-right: 14px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+}
+
+.about-us__title {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.about-us__item {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 28px;
+}
