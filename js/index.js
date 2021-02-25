@@ -22,7 +22,8 @@ window.addEventListener('DOMContentLoaded', function() {
         // If we need pagination
         pagination: {
             el: '.gallery-pagination',
-            clickable: 'true'
+            clickable: 'true',
+            type: 'fraction'
         },
 
         // Navigation arrows
