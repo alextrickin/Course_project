@@ -605,7 +605,11 @@
         .gallery-swiper {
             height: 1024px;
         }
+        .gallery-slide {
+            height: 280px;
+        }
         .gallery-slide img {
+            margin-bottom: 34px;
             max-width: 317px;
             max-height: 280px;
         }

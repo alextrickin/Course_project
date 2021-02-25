@@ -42,19 +42,25 @@ window.addEventListener('DOMContentLoaded', function() {
                 slidesPerColumn: 2,
                 slidesPerGroup: 3,
                 slidesPerView: 3,
-                spaceBetween: 20
+                spaceBetween: 5
             },
             1024: {
                 slidesPerColumn: 2,
                 slidesPerGroup: 2,
-                slidesPerView: 2,
-                spaceBetween: 20
+                slidesPerView: 2
+                    //spaceBetween: 5
 
+            },
+            768: {
+                slidesPerColumn: 1,
+                slidesPerGroup: 2,
+                slidesPerView: 2
             },
             640: {
                 slidesPerColumn: 1,
-                slidesPerView: 1,
-                spaceBetween: 20
+                slidesPerGroup: 1,
+                slidesPerView: 1
+                    //spaceBetween: 20
             },
         },
     });
