@@ -449,6 +449,8 @@
     /*Галерея*/
     
     .gallery {
+        display: flex;
+        flex-wrap: wrap;
         padding-top: 50px;
         padding-right: 15px;
         padding-left: 15px;
@@ -458,12 +460,14 @@
     }
     
     .gallery__title {
+        min-width: 100%;
         font-weight: 400;
         color: white;
     }
     
     .gallery__form {
         padding-top: 18px;
+        width: 290px;
     }
     
     .gallery__form_title {
@@ -475,7 +479,7 @@
     .gallery__form_autor {
         margin-top: 12px;
         padding-left: 10px;
-        min-width: 290px;
+        min-width: 100%;
         min-height: 40px;
         font-size: 16px;
         color: white;
@@ -515,7 +519,8 @@
     
     .gallery-slide img {
         margin-bottom: 12px;
-        object-fit: contain;
+        *object-fit: contain;
+        object-fit: scale-down
     }
     
     .gallery-button-prev,
@@ -575,4 +580,33 @@
     .gallery__explanation_link {
         font-size: 16px;
         color: #c183f2;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1920px) {
+        .gallery {
+            padding-top: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .gallery__title {
+            font-size: 48px;
+        }
+        .gallery__form {
+            padding-top: 35px;
+            width: 280px;
+        }
+        .gallery__form_autor {
+            margin-top: 16px;
+        }
+        .gallery__form_direction,
+        .gallery__form_technique {
+            min-width: 255px;
+        }
+        .gallery-swiper {
+            height: 1024px;
+        }
+        .gallery-slide img {
+            max-width: 317px;
+            max-height: 280px;
+        }
     }

@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var gallery_Swiper = new Swiper('.gallery-swiper', {
         // Optional parameters    
-        loop: true,
+        //loop: false,
 
         // If we need pagination
         pagination: {
@@ -32,10 +32,30 @@ window.addEventListener('DOMContentLoaded', function() {
             prevEl: '.gallery-button-next',
         },
         initialSlide: 12,
-        slidesPerView: 1,
-        slidesPerColumn: 1,
+        //slidesPerView: 2,
+        //slidesPerColumn: 1,
         slidesPerColumnFill: "column",
-        slidesPerGroup: 1,
-        spaceBetween: 34
+        //slidesPerGroup: 2,
+        //spaceBetween: 34,
+        breakpoints: {
+            1920: {
+                slidesPerColumn: 2,
+                slidesPerGroup: 3,
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerColumn: 2,
+                slidesPerGroup: 2,
+                slidesPerView: 2,
+                spaceBetween: 20
+
+            },
+            640: {
+                slidesPerColumn: 1,
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+        },
     });
 })
