@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
         // Optional parameters    
         loop: false,
 
+
         // If we need pagination
         pagination: {
             el: '.gallery-pagination',
@@ -31,31 +32,31 @@ window.addEventListener('DOMContentLoaded', function() {
             nextEl: '.gallery-button-prev',
             prevEl: '.gallery-button-next',
         },
-        initialSlide: 12,
-        slidesPerColumnFill: "column",
+        //initialSlide: 13,
+        slidesPerColumnFill: "row",
         breakpoints: {
             1920: {
                 slidesPerColumn: 2,
-                slidesPerGroup: 3,
+                //slidesPerGroup: 3,
                 slidesPerView: 3,
                 //spaceBetween: 5
             },
             1024: {
                 slidesPerColumn: 2,
-                slidesPerGroup: 2,
+                //slidesPerGroup: 2,
                 slidesPerView: 2
                     //spaceBetween: 5
 
             },
             768: {
                 slidesPerColumn: 2,
-                slidesPerGroup: 2,
+                //slidesPerGroup: 2,
                 slidesPerView: 2,
-                //spaceBetween: 34
+                spaceBetween: 30
             },
             640: {
                 slidesPerColumn: 1,
-                slidesPerGroup: 2,
+                //slidesPerGroup: 2,
                 slidesPerView: 2,
                 //spaceBetween: 20
             },
