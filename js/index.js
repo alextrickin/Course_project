@@ -32,17 +32,13 @@ window.addEventListener('DOMContentLoaded', function() {
             prevEl: '.gallery-button-next',
         },
         initialSlide: 12,
-        //slidesPerView: 2,
-        //slidesPerColumn: 1,
         slidesPerColumnFill: "column",
-        //slidesPerGroup: 2,
-        //spaceBetween: 34,
         breakpoints: {
             1920: {
                 slidesPerColumn: 2,
                 slidesPerGroup: 3,
                 slidesPerView: 3,
-                spaceBetween: 5
+                //spaceBetween: 5
             },
             1024: {
                 slidesPerColumn: 2,
@@ -52,15 +48,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
             },
             768: {
-                slidesPerColumn: 1,
+                slidesPerColumn: 2,
                 slidesPerGroup: 2,
-                slidesPerView: 2
+                slidesPerView: 2,
+                //spaceBetween: 34
             },
             640: {
                 slidesPerColumn: 1,
-                slidesPerGroup: 1,
-                slidesPerView: 1
-                    //spaceBetween: 20
+                slidesPerGroup: 2,
+                slidesPerView: 2,
+                //spaceBetween: 20
             },
         },
     });
