@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var gallery_Swiper = new Swiper('.gallery-swiper', {
         // Optional parameters    
-        //loop: false,
+        loop: false,
 
         // If we need pagination
         pagination: {
