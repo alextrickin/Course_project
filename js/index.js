@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', function() {
         //initialSlide: 13,
         slidesPerColumnFill: "row",
         breakpoints: {
-            1920: {
+            1400: {
                 slidesPerColumn: 2,
                 //slidesPerGroup: 3,
                 slidesPerView: 3,
@@ -44,8 +44,8 @@ window.addEventListener('DOMContentLoaded', function() {
             1024: {
                 slidesPerColumn: 2,
                 //slidesPerGroup: 2,
-                slidesPerView: 2
-                    //spaceBetween: 5
+                slidesPerView: 2,
+                spaceBetween: 34
 
             },
             768: {
