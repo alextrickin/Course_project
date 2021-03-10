@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
     var main_top_Swiper = new Swiper('.main-top-swiper', {
         // Optional parameters    
         loop: true,
@@ -37,28 +37,19 @@ window.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             1400: {
                 slidesPerColumn: 2,
-                //slidesPerGroup: 3,
                 slidesPerView: 3,
-                //spaceBetween: 5
+                spaceBetween: 50
             },
             1024: {
                 slidesPerColumn: 2,
-                //slidesPerGroup: 2,
                 slidesPerView: 2,
                 spaceBetween: 34
 
             },
             768: {
                 slidesPerColumn: 2,
-                //slidesPerGroup: 2,
                 slidesPerView: 2,
                 spaceBetween: 30
-            },
-            640: {
-                slidesPerColumn: 1,
-                //slidesPerGroup: 2,
-                slidesPerView: 2,
-                //spaceBetween: 20
             },
         },
     });
