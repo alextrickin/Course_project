@@ -58,6 +58,11 @@ h2 {
   font-size: 28px;
   line-height: 38px;
 }
+h4 {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "OpenSans SemiBold";
+}
 /*
 img {
   padding: 0;

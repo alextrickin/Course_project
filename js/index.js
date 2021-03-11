@@ -58,4 +58,10 @@ window.addEventListener('DOMContentLoaded', function () {
             },
         },
     });
+    $(function () {
+        $(".catalog__accordion").accordion({
+            icons: false
+        });
+        
+    });
 })
