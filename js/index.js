@@ -59,9 +59,9 @@ window.addEventListener('DOMContentLoaded', function () {
         },
     });
     $(function () {
-        $(".catalog__accordion").accordion({
-            //icons: false,
-            header: '.catalog__accordion_item-title'
+        $(".catalog__accordion").accordion({            
+            header: ".catalog__accordion_item-title",
+            heightStyle: 'content'
         });
         
     });

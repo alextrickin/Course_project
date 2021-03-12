@@ -816,39 +816,87 @@
       width: 100%;
     }
 
+    .ui-state-default {
+      border: none;
+    }
+
+    .catalog__accordion_item-title p {
+      margin: 7px 0;
+      padding: 13px 0 13px 7px;
+      border-top: 1px solid#CACACA;
+      border-bottom: 1px solid #CACACA;
+    }
+
+    .catalog__accordion_item-title:hover p {
+      border-top: 1px solid#9D5CD0;
+      border-bottom: 1px solid #9D5CD0;
+      color: #9D5CD0;
+    }
+
+    .catalog__accordion_item-title:focus p {
+      color: #333;
+    }
+
+    .catalog__accordion_item-title:active p {
+      border-top: 1px solid#7943A4;
+      border-bottom: 1px solid #7943A4;
+      color: #7943A4;
+    }
+
     .catalog__accordion .ui-accordion-header {
+      font-size: 18px;
+      line-height: 32px;
+      font-family: "OpenSans SemiBold";
       position: relative;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: white;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
     }
 
     .catalog__accordion .ui-accordion-header-icon {
       content: '';
       position: absolute;
-      margin: 0;
-      top: 10px;
+      top: 25px;
       right: 10px;
       display: inline-block;
       width: 30px;
-      height: 30px;      
+      height: 30px;
       background-image: url(/img/down-arrow.svg);
+      background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
+    }
+
+    .catalog__accordion:hover .catalog__accordion_item-title:hover .ui-accordion-header-icon {
+      background-image: url(/img/down-arrow-purple.svg);
+    }
+
+    .catalog__accordion:active .catalog__accordion_item-title:active .ui-accordion-header-icon {
+      background-image: url(/img/up-arrow-purple.svg);
+    }
+
+    .ui-state-focus {
+      outline: none;
+    }
+
+    .ui-state-active {
+      outline: 2px solid #7943A4;
     }
 
     .catalog__accordion .ui-accordion-header-active .ui-accordion-header-icon {
       background-image: url(/img/up-arrow.svg);
     }
 
-    .catalog__accordion_item-title {
-      color: #333;
-      background: white;
-      border-left: none;
-      border-right: none;
-      border-top-color: #CACACA;
-      border-bottom-color: #9D5CD0;
-    }
-
     .catalog__accordion_link {
       display: block;
+      font-size: 16px;
+    }
+
+    .catalog__accordion_item-description {
       font-size: 16px;
     }
 
@@ -879,8 +927,16 @@
       .catalog__description {
         display: block;
       }
+      .ui-accordion .ui-accordion-header {
+        font-size: 24px;
+        *padding: 40px 0;
+      }
+      .catalog__accordion_item-title p {
+        padding: 32px 0 32px 7px;
+      }
       .catalog__accordion .ui-accordion-header-icon {
         width: 50px;
         height: 50px;
+        top: 30px;
       }
     }
