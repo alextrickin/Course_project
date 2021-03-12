@@ -447,7 +447,7 @@
 
     .gallery__form {
       padding-top: 18px;
-      width: 290px;
+      width: 280px;
     }
 
     .gallery__form_title {
@@ -470,7 +470,7 @@
 
     .gallery__form_direction, .gallery__form_technique {
       padding-left: 20px;
-      min-width: 265px;
+      min-width: 255px;
       min-height: 35px;
       font-size: 16px;
       color: white;
@@ -493,16 +493,14 @@
     .gallery-swiper {
       padding-top: 40px;
       padding-bottom: 40px;
-      min-width: 280px;
+      *min-width: 270px;
     }
 
     .gallery-slide {
       overflow: hidden;
-      *max-width: 280px;
     }
 
     .gallerey-slide__images {
-      *min-height: 367px;
       cursor: pointer;
       object-fit: scale-down;
     }
@@ -530,7 +528,7 @@
       content: "";
       max-width: 350px;
       width: 100%;
-      min-width: 290px;
+      min-width: 280px;
       height: 100%;
       background-color: rgba(194, 131, 243, 0.4);
     }
@@ -759,14 +757,52 @@
 
     .catalog__title {
       display: inline-flex;
+      margin-right: 40px;
     }
 
     .catalog__list {
       display: flex;
       padding-top: 10px;
       padding-bottom: 20px;
-      min-width: 100%;
+      min-width: 280px;
       justify-content: space-between;
+    }
+
+    .catalog__list_items {
+      line-height: 0.8;
+    }
+    .catalog__list_items-button{
+      padding: 0;
+      width: 32px; 
+      height: 32px;
+      border-radius: 29px;
+    }
+    .catalog__list_items-button:hover {      
+      box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
+    }
+
+     .catalog__list_items-button:focus {
+      margin-top: -10px;
+      width: 52px; 
+      height: 52px;
+      box-shadow: 0 0 0 2px #9D5CD0;
+      
+    }
+    .catalog__list_items-button:active {   
+      margin-top: 0;
+      width: 32px; 
+      height: 32px;
+      box-shadow: 0 0 0 2px #9D5CD0;
+      
+    }   
+
+    
+    
+    .catalog__description {
+      display: none;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: justify;
     }
 
     .catalog__accordion {}
@@ -783,4 +819,13 @@
     .catalog__accordion_link {
       display: block;
       font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .catalog {
+        padding: 80px 50px 0;
+      }
+      .catalog__description {
+        display: block;
+      }
     }
