@@ -60,7 +60,8 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     $(function () {
         $(".catalog__accordion").accordion({
-            icons: false
+            //icons: false,
+            header: '.catalog__accordion_item-title'
         });
         
     });

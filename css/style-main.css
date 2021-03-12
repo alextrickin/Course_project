@@ -816,6 +816,28 @@
       width: 100%;
     }
 
+    .catalog__accordion .ui-accordion-header {
+      position: relative;
+    }
+
+    .catalog__accordion .ui-accordion-header-icon {
+      content: '';
+      position: absolute;
+      margin: 0;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;      
+      background-image: url(/img/down-arrow.svg);
+      background-size: contain;
+      background-position: 0 0;
+    }
+
+    .catalog__accordion .ui-accordion-header-active .ui-accordion-header-icon {
+      background-image: url(/img/up-arrow.svg);
+    }
+
     .catalog__accordion_item-title {
       color: #333;
       background: white;
@@ -856,5 +878,9 @@
       }
       .catalog__description {
         display: block;
+      }
+      .catalog__accordion .ui-accordion-header-icon {
+        width: 50px;
+        height: 50px;
       }
     }
