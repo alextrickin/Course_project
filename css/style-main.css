@@ -757,55 +757,64 @@
 
     .catalog__title {
       display: inline-flex;
-      margin-right: 40px;
+      margin-right: 39px;
     }
 
     .catalog__list {
       display: flex;
       padding-top: 10px;
-      padding-bottom: 20px;
+      *padding-bottom: 20px;
       min-width: 280px;
+      max-width: 100%;
       justify-content: space-between;
     }
 
     .catalog__list_items {
       line-height: 0.8;
     }
-    .catalog__list_items-button{
+
+    .catalog__list_items-button {
       padding: 0;
-      width: 32px; 
+      width: 32px;
       height: 32px;
       border-radius: 29px;
     }
-    .catalog__list_items-button:hover {      
+
+    .catalog__list_items-button:hover {
       box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
     }
 
-     .catalog__list_items-button:focus {
-      margin-top: -10px;
-      width: 52px; 
-      height: 52px;
+    .catalog__list_items-button:focus {
+      margin-top: -6px;
+      width: 44px;
+      height: 44px;
       box-shadow: 0 0 0 2px #9D5CD0;
-      
     }
-    .catalog__list_items-button:active {   
+
+    .catalog__list_items-button:active {
       margin-top: 0;
-      width: 32px; 
+      width: 32px;
       height: 32px;
       box-shadow: 0 0 0 2px #9D5CD0;
-      
-    }   
+    }
 
-    
-    
+    .catalog__list_items-button-img {
+      width: 32px;
+      height: 32px;
+    }
+
     .catalog__description {
       display: none;
+      padding-top: 23px;
       font-size: 16px;
       line-height: 32px;
       text-align: justify;
     }
 
-    .catalog__accordion {}
+    .catalog__accordion {
+      padding-top: 20px;
+      width: 100%;
+    }
 
     .catalog__accordion_item-title {
       color: #333;
@@ -824,6 +833,26 @@
     @media (min-width: 768px) {
       .catalog {
         padding: 80px 50px 0;
+      }
+      .catalog__list {
+        min-width: 430px;
+      }
+      .catalog__list_items-button {
+        width: 46px;
+        height: 46px;
+        border-radius: 50px;
+      }
+      .catalog__list_items-button:focus {
+        width: 66px;
+        height: 66px;
+      }
+      .catalog__list_items-button:active {
+        width: 46px;
+        height: 46px;
+      }
+      .catalog__list_items-button-img {
+        width: 46px;
+        height: 46px;
       }
       .catalog__description {
         display: block;
