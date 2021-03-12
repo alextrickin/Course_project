@@ -493,7 +493,6 @@
     .gallery-swiper {
       padding-top: 40px;
       padding-bottom: 40px;
-      *min-width: 270px;
     }
 
     .gallery-slide {
@@ -516,7 +515,6 @@
       max-width: 215px;
       width: 55%;
       min-width: 100px;
-      *max-height: 150px;
       content: url(/img/magnifier+.svg);
       background-color: rgba(0, 0, 0, 0.5);
     }
@@ -763,7 +761,6 @@
     .catalog__list {
       display: flex;
       padding-top: 10px;
-      *padding-bottom: 20px;
       min-width: 280px;
       max-width: 100%;
       justify-content: space-between;
@@ -820,24 +817,24 @@
       border: none;
     }
 
-    .catalog__accordion_item-title p {
+    .catalog__accordion_items-title p {
       margin: 7px 0;
       padding: 13px 0 13px 7px;
       border-top: 1px solid#CACACA;
       border-bottom: 1px solid #CACACA;
     }
 
-    .catalog__accordion_item-title:hover p {
+    .catalog__accordion_items-title:hover p {
       border-top: 1px solid#9D5CD0;
       border-bottom: 1px solid #9D5CD0;
       color: #9D5CD0;
     }
 
-    .catalog__accordion_item-title:focus p {
+    .catalog__accordion_items-title:focus p {
       color: #333;
     }
 
-    .catalog__accordion_item-title:active p {
+    .catalog__accordion_items-title:active p {
       border-top: 1px solid#7943A4;
       border-bottom: 1px solid #7943A4;
       color: #7943A4;
@@ -860,7 +857,7 @@
     .catalog__accordion .ui-accordion-header-icon {
       content: '';
       position: absolute;
-      top: 25px;
+      top: 20px;
       right: 10px;
       display: inline-block;
       width: 30px;
@@ -871,11 +868,11 @@
       background-position: 0 0;
     }
 
-    .catalog__accordion:hover .catalog__accordion_item-title:hover .ui-accordion-header-icon {
+    .catalog__accordion:hover .catalog__accordion_items-title:hover .ui-accordion-header-icon {
       background-image: url(/img/down-arrow-purple.svg);
     }
 
-    .catalog__accordion:active .catalog__accordion_item-title:active .ui-accordion-header-icon {
+    .catalog__accordion:active .catalog__accordion_items-title:active .ui-accordion-header-icon {
       background-image: url(/img/up-arrow-purple.svg);
     }
 
@@ -891,13 +888,30 @@
       background-image: url(/img/up-arrow.svg);
     }
 
-    .catalog__accordion_link {
-      display: block;
+    .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+      font-family: "OpenSans Regular", sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .catalog__accordion_item button {
+      padding: 6px;
+      cursor: pointer;
       font-size: 16px;
     }
 
-    .catalog__accordion_item-description {
-      font-size: 16px;
+    .catalog__accordion_item button:hover {
+      color: #9D5CD0;
+      text-decoration: underline;
+    }
+
+    .catalog__accordion_item button:focus {
+      outline: 2px solid #7943A4;
+    }
+
+    .catalog__accordion_item button:active {
+      color: #7943A4;
+      text-decoration: none;
     }
 
     @media (min-width: 768px) {
@@ -929,9 +943,8 @@
       }
       .ui-accordion .ui-accordion-header {
         font-size: 24px;
-        *padding: 40px 0;
       }
-      .catalog__accordion_item-title p {
+      .catalog__accordion_items-title p {
         padding: 32px 0 32px 7px;
       }
       .catalog__accordion .ui-accordion-header-icon {

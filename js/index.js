@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     $(function () {
         $(".catalog__accordion").accordion({            
-            header: ".catalog__accordion_item-title",
+            header: ".catalog__accordion_items-title",
             heightStyle: 'content'
         });
         
