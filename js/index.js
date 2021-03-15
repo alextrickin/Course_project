@@ -59,10 +59,10 @@ window.addEventListener('DOMContentLoaded', function () {
         },
     });
     $(function () {
-        $(".catalog__accordion").accordion({            
+        $(".catalog__accordion").accordion({
             header: ".catalog__accordion_items-title",
             heightStyle: 'content'
         });
-        
+
     });
 })
