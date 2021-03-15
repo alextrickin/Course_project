@@ -759,9 +759,10 @@
     }
 
     .catalog__list {
+      margin-left: -6px;      
       display: flex;
-      padding-top: 10px;
-      min-width: 280px;
+      padding-top: 10px;      
+      min-width: 302px;
       max-width: 100%;
       justify-content: space-between;
     }
@@ -784,9 +785,11 @@
     .catalog__list_items-button:focus {
       box-shadow: 0 0 0 2px #9D5CD0;
     }
+
     .catalog__list_items-button:active {
       box-shadow: none;
     }
+
     .catalog__list_items-button:active .catalog__list_items-button-img {
       box-shadow: 0 0 0 2px #9D5CD0;
     }
@@ -806,18 +809,39 @@
       text-align: justify;
     }
 
+    
+
+    .catalog__artists {
+      *display: flex;
+      *flex-wrap: nowrap;
+    }
+
     .catalog__accordion {
-      padding-top: 20px;
-      width: 100%;
+      *padding-top: 10px;
+      
+    }
+
+    .ui-accordion .ui-accordion-content {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .ui-state-default {
       border: none;
     }
 
+    .catalog__accordion_items-title {
+ 
+      font-family: "OpenSans SemiBold", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      
+    }
+
     .catalog__accordion_items-title p {
       margin: 7px 0;
-      padding: 13px 0 13px 7px;
+      padding: 15px 0;
       border-top: 1px solid#CACACA;
       border-bottom: 1px solid #CACACA;
     }
@@ -855,8 +879,8 @@
     .catalog__accordion .ui-accordion-header-icon {
       content: '';
       position: absolute;
-      top: 20px;
-      right: 10px;
+      top: 30px;
+      right: 0;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -892,8 +916,18 @@
       color: #333;
     }
 
-    .catalog__accordion_item button {
-      padding: 6px;
+    .catalog__accordion_items {
+      display: flex;      
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .catalog__accordion_item {
+      min-width: 208px;
+    }
+
+    .catalog__accordion_item button {      
+      padding: 7px 0;
       cursor: pointer;
       font-size: 16px;
     }
@@ -910,6 +944,41 @@
     .catalog__accordion_item button:active {
       color: #7943A4;
       text-decoration: none;
+    }
+
+    .catalog__artists-description {
+      padding-top: 60px;;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .catalog__artists-description_picture {      
+      object-fit: scale-down;
+      width: 100%;
+      height: 100%;
+    }
+
+    .catalog__artists-description_title {
+      padding: 20px 0 0 0;      
+      margin: 0;
+      font-family: "OpenSans SemiBold", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .catalog__artists-description_dates {
+      padding: 20px 0 0 0;
+      margin: 0;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .catalog__artists-description_history {
+      padding: 5px 0 0 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 32px;
     }
 
     @media (min-width: 768px) {
@@ -941,5 +1010,11 @@
         width: 50px;
         height: 50px;
         top: 30px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .catalog__accordion, .catalog__artists-description {
+        *max-width: 40%;
       }
     }
