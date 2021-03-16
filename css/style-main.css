@@ -1070,3 +1070,9 @@
         min-width: 750px;
       }
     }
+
+    /*События*/
+
+    .events {
+      padding: 75px 15px 0;
+    }

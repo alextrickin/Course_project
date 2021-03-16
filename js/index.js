@@ -58,6 +58,26 @@ window.addEventListener('DOMContentLoaded', function () {
             },
         },
     });
+    var gallery_Swiper = new Swiper('.events-swiper', {
+        // Optional parameters    
+        loop: false,
+
+
+        // If we need pagination
+        pagination: {
+            el: '.events-swiper-pagination',
+            clickable: 'true'
+            //type: 'fraction'
+        },
+
+        // Navigation arrows
+        //navigation: {
+        //    nextEl: '.gallery-button-prev',
+        //    prevEl: '.gallery-button-next',
+        //},
+        //initialSlide: 13,
+        
+    });
     $(function () {
         $(".catalog__accordion").accordion({
             header: ".catalog__accordion_items-title",
