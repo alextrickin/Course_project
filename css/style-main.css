@@ -1070,32 +1070,109 @@
     /*События*/
 
     .events {
-      padding: 75px 15px 0;
+      padding: 40px 15px 0;
     }
-    
-    .events-slide__images{
+
+    .events-swiper {
+      margin-top: 12px;
+    }
+
+    .events-wrapper {
+      position: relative;
+      margin-bottom: 25px;
+      border: 1px solid #CACACA;
+      min-height: 683px;
+    }
+
+    .events-slide__images {
       max-height: 200px;
-    }   
-    .events__flex-container{
+    }
+
+    .events-slide__date {
+      margin-top: 13px;
+      margin-left: auto;
+      margin-right: 10px;
+      max-width: 162px;
+      text-align: right;
+      color: #999;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .events-slide__title {
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+      min-height: 102px;
+      text-align: center;
+    }
+
+    .events-slide__description {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: justify;
+    }
+
+    .events-slide__link {
+      position: absolute;
+      top: 600px;
+      left: 30px;
+      font-size: 16px;
+      line-height: 32px;
+      border-bottom: 1px solid #9D5CD0;
+      color: #9D5CD0;
+    }
+
+    .events-swiper-pagination {
+      *position: absolute;
+      position: relative;
+      max-height: 20px;
+      *top: 683px;
+      *top: 20px;
+     
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #CACACA;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #666;
+    }
+
+    .events__flex-container {
       display: none;
       flex-wrap: wrap;
     }
+    .events__button{
+      display: none;
+    }
+
     @media (min-width: 768px) {
       .events-swiper {
         display: none;
       }
-      .events__flex-container{
-        display: flex;  
+      .events__flex-container {
+        display: flex;
         max-height: 427px;
         overflow: hidden;
         justify-content: space-between;
-    }  
-    .events__flex-container_item {
-      max-width: 45%;
-      margin-right: 30px;
-    }
-    @media (min-width: 1920px) {
-      .events-slide__images{
-        max-height: 300px;
-      } 
-    }
+      }
+      .events__flex-container_item {
+        max-width: 45%;
+        margin-right: 30px;
+      }
+      @media (min-width: 1920px) {
+        .events-slide__images {
+          max-height: 300px;
+        }
+      }
