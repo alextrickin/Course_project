@@ -37,17 +37,19 @@ window.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             1920: {
                 slidesPerColumn: 2,
+                slidesPerGroup: 3,
                 slidesPerView: 3,
                 spaceBetween: 50
             },
             1024: {
                 slidesPerColumn: 2,
+                slidesPerGroup: 2,
                 slidesPerView: 2,
                 spaceBetween: 34
-
             },
             768: {
                 slidesPerColumn: 2,
+                slidesPerGroup: 1,
                 slidesPerView: 2,
                 spaceBetween: 30
             },
@@ -58,10 +60,10 @@ window.addEventListener('DOMContentLoaded', function () {
             },
         },
     });
-    var gallery_Swiper = new Swiper('.events-swiper', {
+
+    var events_Swiper = new Swiper('.events-swiper', {
         // Optional parameters    
         loop: false,
-
 
         // If we need pagination
         pagination: {
@@ -69,20 +71,33 @@ window.addEventListener('DOMContentLoaded', function () {
             clickable: 'true'
             //type: 'fraction'
         },
-
-        // Navigation arrows
-        //navigation: {
-        //    nextEl: '.gallery-button-prev',
-        //    prevEl: '.gallery-button-next',
-        //},
-        //initialSlide: 13,
-        
+        slidesPerColumnFill: "row",
+        //slidesPerColumn: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            1024: {
+                //slidesPerColumn: 2,
+                slidesPerView: 3
+            },
+            768: {
+                //slidesPerColumn: 3,
+                slidesPerView: 2
+            },
+        },
     });
+
     $(function () {
         $(".catalog__accordion").accordion({
             header: ".catalog__accordion_items-title",
             heightStyle: 'content'
         });
-
     });
+    document.querySelector(".events__button").onclick = function () {
+        if ((768<=window.innerWidth)&(window.innerWidth<1024)) {
+        document.querySelector(".events__flex-container").style.cssText = "max-height: 1200px; overflow: auto;"
+        }
+        if (768<=window.innerWidth) {
+            document.querySelector(".events__flex-container").style.cssText = "max-height: 900px; overflow: auto;"
+        }
+    };
 })

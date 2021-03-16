@@ -952,10 +952,6 @@
     .catalog__artists-description_title {
       padding: 20px 0 0 0;
       margin: 0;
-      font-family: "OpenSans SemiBold", sans-serif;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
     }
 
     .catalog__artists-description_dates {
@@ -1075,4 +1071,31 @@
 
     .events {
       padding: 75px 15px 0;
+    }
+    
+    .events-slide__images{
+      max-height: 200px;
+    }   
+    .events__flex-container{
+      display: none;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 768px) {
+      .events-swiper {
+        display: none;
+      }
+      .events__flex-container{
+        display: flex;  
+        max-height: 427px;
+        overflow: hidden;
+        justify-content: space-between;
+    }  
+    .events__flex-container_item {
+      max-width: 45%;
+      margin-right: 30px;
+    }
+    @media (min-width: 1920px) {
+      .events-slide__images{
+        max-height: 300px;
+      } 
     }
