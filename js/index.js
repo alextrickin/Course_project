@@ -68,8 +68,12 @@ window.addEventListener('DOMContentLoaded', function () {
         // If we need pagination
         pagination: {
             el: '.events-swiper-pagination',
-            clickable: 'true'      
-        },       
+            clickable: 'true'
+        },
+    });
+
+    $(function () {
+
     });
 
     $(function () {
@@ -79,10 +83,10 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     });
     document.querySelector(".events__button").onclick = function () {
-        if ((768<=window.innerWidth)&(window.innerWidth<1024)) {
-        document.querySelector(".events__flex-container").style.cssText = "max-height: 1200px; overflow: auto;"
+        if ((768 <= window.innerWidth) & (window.innerWidth < 1024)) {
+            document.querySelector(".events__flex-container").style.cssText = "max-height: 1200px; overflow: auto;"
         }
-        if (768<=window.innerWidth) {
+        if (768 <= window.innerWidth) {
             document.querySelector(".events__flex-container").style.cssText = "max-height: 900px; overflow: auto;"
         }
     };

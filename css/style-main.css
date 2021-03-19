@@ -736,7 +736,7 @@
         left: -990px;
       }
       .gallery-pagination {
-        top: -820px;
+        top: -820px;        
         left: -500px;
       }
       .gallery__explanation {
@@ -1075,19 +1075,18 @@
 
     .events-swiper {
       margin-top: 12px;
-      *max-height: 683px;
     }
 
     .events-wrapper {
-      *position: relative;
+      position: relative;
       margin-bottom: 25px;
     }
 
     .events-slide__container {
       margin-right: 2px;
+      min-height: 683px;
       border: 1px solid #CACACA;
-      
-      padding-bottom: 45px;
+      *padding-bottom: 45px;
     }
 
     .events-slide__images {
@@ -1119,7 +1118,6 @@
     .events-slide__description {
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 61px;
       max-width: 80%;
       font-size: 16px;
       line-height: 32px;
@@ -1128,17 +1126,19 @@
     }
 
     .events-slide__link {
+      position: relative;
+      position: absolute;
+      top: 600px;
       margin-left: 30px;
       font-size: 16px;
       line-height: 32px;
       border-bottom: 1px solid #9D5CD0;
-      color: #9D5CD0;
+      color: #9D5CD0;      
     }
 
     .events-swiper-pagination {
       position: relative;
       max-height: 20px;
-      top: -40px;      
     }
 
     .swiper-pagination-bullet {
@@ -1156,26 +1156,51 @@
 
     .events__flex-container {
       display: none;
+      margin-top: 30px;      
+      max-height: 690px;
       flex-wrap: wrap;
+     overflow: hidden;
+      justify-content: space-between;
+    }
+
+    .events__flex-slide {
+      margin-bottom: 35px;
+      max-width: 317px;
+      overflow: hidden;
     }
 
     .events__button {
-      display: none;
+      display: none;      
+      margin: auto;
+      margin-top: 45px;
+      padding: 15px 35px;
+      font-family: "OpenSans Bold";
+      line-height: 25px;
+      font-family: "OpenSans Bold";
+      border: 2px solid #9D5CD0;
+      border-radius: 50px;
+      color: #9D5CD0;
+      background-color: yellow;
+      
+
     }
 
     @media (min-width: 768px) {
+      .events {
+        padding: 80px 50px 0;
+      }
       .events-swiper {
         display: none;
       }
       .events__flex-container {
         display: flex;
-        *max-height: 427px;
-        overflow: hidden;
-        justify-content: space-between;
       }
       .events__flex-container_item {
         max-width: 45%;
         margin-right: 30px;
+      }
+      events-slide__title {        
+        text-align: justify;
       }
       .events__button {
         display: block;
