@@ -1075,24 +1075,32 @@
 
     .events-swiper {
       margin-top: 12px;
+      *max-height: 683px;
     }
 
     .events-wrapper {
-      position: relative;
+      *position: relative;
       margin-bottom: 25px;
+    }
+
+    .events-slide__container {
+      margin-right: 2px;
       border: 1px solid #CACACA;
-      min-height: 683px;
+      
+      padding-bottom: 45px;
     }
 
     .events-slide__images {
+      display: block;
+      margin: auto;
       max-height: 200px;
     }
 
     .events-slide__date {
+      display: inline-block;
       margin-top: 13px;
-      margin-left: auto;
-      margin-right: 10px;
-      max-width: 162px;
+      width: 280px;
+      padding-right: 10px;
       text-align: right;
       color: #999;
       font-size: 12px;
@@ -1111,16 +1119,16 @@
     .events-slide__description {
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 61px;
       max-width: 80%;
       font-size: 16px;
       line-height: 32px;
       text-align: justify;
+      *outline: 2px solid green;
     }
 
     .events-slide__link {
-      position: absolute;
-      top: 600px;
-      left: 30px;
+      margin-left: 30px;
       font-size: 16px;
       line-height: 32px;
       border-bottom: 1px solid #9D5CD0;
@@ -1128,12 +1136,9 @@
     }
 
     .events-swiper-pagination {
-      *position: absolute;
       position: relative;
       max-height: 20px;
-      *top: 683px;
-      *top: 20px;
-     
+      top: -40px;      
     }
 
     .swiper-pagination-bullet {
@@ -1153,7 +1158,8 @@
       display: none;
       flex-wrap: wrap;
     }
-    .events__button{
+
+    .events__button {
       display: none;
     }
 
@@ -1163,7 +1169,7 @@
       }
       .events__flex-container {
         display: flex;
-        max-height: 427px;
+        *max-height: 427px;
         overflow: hidden;
         justify-content: space-between;
       }
@@ -1171,8 +1177,13 @@
         max-width: 45%;
         margin-right: 30px;
       }
-      @media (min-width: 1920px) {
-        .events-slide__images {
-          max-height: 300px;
-        }
+      .events__button {
+        display: block;
       }
+    }
+
+    @media (min-width: 1920px) {
+      .events-slide__images {
+        max-height: 300px;
+      }
+    }

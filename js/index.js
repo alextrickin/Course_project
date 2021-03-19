@@ -64,26 +64,12 @@ window.addEventListener('DOMContentLoaded', function () {
     var events_Swiper = new Swiper('.events-swiper', {
         // Optional parameters    
         loop: false,
-
+        spaceBetween: 50,
         // If we need pagination
         pagination: {
             el: '.events-swiper-pagination',
-            clickable: 'true'
-            //type: 'fraction'
-        },
-        slidesPerColumnFill: "row",
-        //slidesPerColumn: 1,
-        spaceBetween: 30,
-        breakpoints: {
-            1024: {
-                //slidesPerColumn: 2,
-                slidesPerView: 3
-            },
-            768: {
-                //slidesPerColumn: 3,
-                slidesPerView: 2
-            },
-        },
+            clickable: 'true'      
+        },       
     });
 
     $(function () {
