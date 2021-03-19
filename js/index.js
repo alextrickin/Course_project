@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     document.querySelector(".events__button").onclick = function () {
         if ((768 <= window.innerWidth) & (window.innerWidth < 1024)) {
-            document.querySelector(".events__flex-container").style.cssText = "max-height: 1200px; overflow: auto;"
+            document.querySelector(".events__flex-container").style.cssText = "max-height: 100%;"
         }
         if (768 <= window.innerWidth) {
             document.querySelector(".events__flex-container").style.cssText = "max-height: 900px; overflow: auto;"
