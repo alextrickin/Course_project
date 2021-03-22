@@ -1234,3 +1234,34 @@
         left: 30px;
         top: 620px;
       }
+    }
+
+    /*Издания*/
+
+    .publications {
+      padding: 50px 15px 0;
+      background-image: url(../img/publications-background.jpg);
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+
+    .publications__title {
+      color: white;
+    }
+
+    .publications__categories {
+      margin-top: 20px;
+      padding: 10px 0;
+      font-family: "OpenSans Bold";
+      color: white;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      background-color: transparent;
+    }
+
+    .publications__categories_item {
+      background-color: #999;
+    }
