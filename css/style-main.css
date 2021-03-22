@@ -1083,7 +1083,8 @@
     }
 
     .events-slide__container {
-      min-height: 683px;
+      overflow: hidden;
+      min-height: 688px;
       border: 1px solid #CACACA;
     }
 
@@ -1094,11 +1095,12 @@
     }
 
     .events-slide__date {
-      display: inline-block;
       margin-top: 13px;
-      width: 280px;
+      margin-right: 10px;
+      max-width: 90%;
       padding-right: 10px;
       text-align: right;
+      justify-content: right;
       color: #999;
       font-size: 12px;
       line-height: 16px;
@@ -1109,22 +1111,20 @@
       margin-left: auto;
       margin-right: auto;
       max-width: 90%;
-      min-height: 102px;
       text-align: center;
     }
 
     .events-slide__description {
       margin-left: auto;
       margin-right: auto;
+      margin-top: 40px;
       max-width: 80%;
       font-size: 16px;
       line-height: 32px;
       text-align: justify;
-      *outline: 2px solid green;
     }
 
     .events-slide__link {
-      position: relative;
       position: absolute;
       top: 600px;
       margin-left: 30px;
@@ -1159,10 +1159,10 @@
       flex-wrap: wrap;
       overflow: hidden;
       justify-content: space-between;
-      *justify-content: flex-start;
     }
 
     .events__flex-slide {
+      position: relative;
       margin-bottom: 35px;
       max-width: 317px;
       overflow: hidden;
@@ -1187,7 +1187,7 @@
 
     @media (min-width: 768px) {
       .events {
-        padding: 80px 50px 0;
+        padding: 85px 50px 0;
       }
       .events-swiper {
         display: none;
@@ -1195,20 +1195,42 @@
       .events__flex-container {
         display: flex;
       }
-      .events__flex-container_item {
-        max-width: 45%;
-        margin-right: 30px;
-      }
       .events-slide__title {
+        padding: 0 35px;
         text-align: justify;
+      }
+      .events-slide__description {
+        margin-top: 10px;
       }
       .events__button {
         display: block;
       }
     }
 
+    @media (min-width: 1024px) {
+      .events {
+        padding: 100px 50px 0;
+      }
+      .events__flex-slide {
+        max-width: 290px;
+        max-width: 31.5%;
+      }
+    }
+
     @media (min-width: 1920px) {
+      .events {
+        padding: 130px 160px 0;
+      }
+      .events__flex-slide {
+        max-width: 500px;
+      }
+      .events-slide__title {
+        padding: 0 50px;
+      }
       .events-slide__images {
         max-height: 300px;
       }
-    }
+      .events-slide__link {
+        left: 30px;
+        top: 620px;
+      }
