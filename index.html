@@ -808,8 +808,44 @@
           </div>
         </article>
       </div>
-
       <button class="events__button">Все события</button>
+    </section>
+
+    <section class="publications">
+      <h2 class="publications__title">Издания</h2>
+      <select class="publications__categories" name="categories">
+        <option> <label></label>Бестселлеры</option>
+        <option> <label></label>Искусство</option>
+        <option> <label></label>Архитектура</option>
+        <option selected> <label></label>Дизайн</option>
+        <option> <label></label>Мода</option>
+        <option> <label></label>Детям</option>
+        <option> <label></label>Художественная литература</option>
+        <option> <label></label>Публицистика</option>
+        <option> <label></label>Путеводители</option>
+        <option> <label></label>Философия</option>
+        <option> <label></label>Учебная литература</option>
+        <option> <label></label>Журналы и газеты</option>
+      </select>
+      <article class="publications__price_container">
+        <h3 class="publications__price_title"></h3>
+        <div>
+          от
+          <input type="text" placeholder="50">
+          до
+          <input type="text" placeholder="25000">
+          руб.
+        </div>
+        <ul class="publications__list">
+          <li class="publications__list_items" style="max-width: 130px; overflow: hidden;">
+            <img class="publications__list_image" src="/img/slider-4-1.jpg" alt=""
+              style="max-height: 143px;">
+            <p class="publications__list_name">Искусство цвета<br>Иттен, Иоханнес </p>
+            <p class="publications__list_price">620 руб.</p>
+            <button class="publications__list_button">Заказать</button>
+          </li>
+        </ul>
+      </article>
     </section>
 
   </main>
