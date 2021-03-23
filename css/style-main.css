@@ -1239,6 +1239,7 @@
     /*Издания*/
 
     .publications {
+      margin-top: 30px;
       padding: 50px 15px 0;
       background-image: url(../img/publications-background.jpg);
       background-repeat: no-repeat;
@@ -1249,19 +1250,62 @@
       color: white;
     }
 
-    .publications__categories {
-      margin-top: 20px;
+    .categories__title {
+      display: block;
+      margin-top: 10px;
       padding: 10px 0;
-      font-family: "OpenSans Bold";
-      color: white;
-      background-color: transparent;
-      border: none;
-      outline: none;
+      width: 100%;
       border-top: 1px solid white;
       border-bottom: 1px solid white;
-      background-color: transparent;
+      font-size: 16px;
+      font-family: "OpenSans Bold";
     }
 
-    .publications__categories_item {
-      background-color: #999;
+    .categories__title {
+      background-image: url(/img/down-arrow-white.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    .categories__item-container {
+      position: relative;
+      display: block;
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+
+    .categories__item_custom-checkbox {
+      position: absolute;
+      background-image: url(/img/white-square.svg);
+      top: 15px;
+      left: 0px;
+      min-width: 12px;
+      min-height: 12px;
+      background-repeat: no-repeat;
+      *background-position: 280px center;
+    }
+
+    .test {
+      position: absolute;
+      background-image: url(/img/white-square.svg);
+      top: 15px;
+      left: 275px;
+      min-width: 12px;
+      min-height: 12px;
+      background-repeat: no-repeat;
+      *background-position: 280px center;
+    }
+
+    .categories__item_base-checkbox {
+      display: none;
+    }
+
+    .categories__item_base-checkbox:checked+.test {
+      background-image: url(/img/fiolet-cross.svg);
+    }
+
+    .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
+      background-image: url(/img/fiolet-square.svg);
+      
     }
