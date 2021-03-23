@@ -1286,6 +1286,11 @@
       *background-position: 280px center;
     }
 
+    .categories__item_base-checkbox {
+      display: none;
+    }
+
+    /*
     .test {
       position: absolute;
       background-image: url(/img/white-square.svg);
@@ -1297,15 +1302,13 @@
       *background-position: 280px center;
     }
 
-    .categories__item_base-checkbox {
-      display: none;
-    }
+    
 
     .categories__item_base-checkbox:checked+.test {
       background-image: url(/img/fiolet-cross.svg);
     }
+*/
 
     .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
       background-image: url(/img/fiolet-square.svg);
-      
     }
