@@ -595,7 +595,7 @@
     }
 
     .gallery__explanation {
-      margin-top: 10px;
+      *margin-top: 10px;
       padding-bottom: 70px;
       font-size: 16px;
       line-height: 32px;
@@ -768,7 +768,7 @@
     }
 
     .catalog__artists {
-      margin-top: 7px;
+      margin-top: 15px;
     }
 
     .catalog__list_items {
@@ -813,10 +813,8 @@
       text-align: justify;
     }
 
-    .ui-accordion .ui-accordion-content {
-      padding-top: 15px;
-      padding-left: 0;
-      padding-right: 0;
+    .catalog__accordion_items {
+      padding: 15px 0 0 0;
     }
 
     .ui-state-default {
@@ -909,6 +907,7 @@
 
     .catalog__accordion_items {
       display: flex;
+      margin-bottom: 20px;
       flex-wrap: wrap;
       justify-content: space-between;
     }
@@ -1250,65 +1249,53 @@
       color: white;
     }
 
-    .categories__title {
+    .publications__accordion_items-title {
       display: block;
       margin-top: 10px;
+      margin-bottom: 0;
       padding: 10px 0;
       width: 100%;
+      color: white;
       border-top: 1px solid white;
       border-bottom: 1px solid white;
       font-size: 16px;
       font-family: "OpenSans Bold";
-    }
-
-    .categories__title {
       background-image: url(/img/down-arrow-white.svg);
       background-repeat: no-repeat;
       background-position: right center;
     }
 
-    .categories__item-container {
-      position: relative;
-      display: block;
-      padding: 10px 0 10px 20px;
-      border-bottom: 1px solid white;
-      color: white;
+    .publications__accordion .ui-state-active {
+      outline: none;
+      background-image: url(/img/up-arrow-white.svg);
     }
 
-    .categories__item_custom-checkbox {
-      position: absolute;
-      background-image: url(/img/white-square.svg);
-      top: 15px;
-      left: 0px;
-      min-width: 12px;
-      min-height: 12px;
-      background-repeat: no-repeat;
-      *background-position: 280px center;
+    .categories__container .ui-accordion .ui-accordion-content {
+      padding-top: 0;
+      margin: -15px;
+    }
+
+    .categories__item-container {
+      position: relative;
+      padding: 0;
     }
 
     .categories__item_base-checkbox {
       display: none;
     }
 
-    /*
-    .test {
-      position: absolute;
-      background-image: url(/img/white-square.svg);
-      top: 15px;
-      left: 275px;
-      min-width: 12px;
-      min-height: 12px;
-      background-repeat: no-repeat;
-      *background-position: 280px center;
+    .categories__item_custom-checkbox {
+      position: relative;
+      display: block;
+      padding: 10px 0 10px 20px;
+      top: 0;
+      left: 0px;
+      color: white;
+      border-bottom: 1px solid white;
+      background: url(/img/white-square.svg) no-repeat 0 50%;
     }
-
-    
-
-    .categories__item_base-checkbox:checked+.test {
-      background-image: url(/img/fiolet-cross.svg);
-    }
-*/
 
     .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
-      background-image: url(/img/fiolet-square.svg);
+      background: url(/img/fiolet-square.svg) no-repeat 0 50%, url(/img/fiolet-cross.svg) 100% 50% no-repeat;
+      color: #C283F3;
     }

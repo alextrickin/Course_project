@@ -11,7 +11,9 @@
     -->
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!--
   <link rel="stylesheet" href="/css/jquery-ui.css">
+  -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style-header.css">
   <link rel="stylesheet" href="css/style-main.css">
@@ -812,62 +814,84 @@
     </section>
 
     <section class="publications">
+
+      <script>
+        function getCheckedCheckBoxes() {
+          var checkboxes = document.getElementsByClassName('categories__item_base-checkbox');
+          var checkboxesChecked = [];
+          $('.categories__item-checked').empty();
+          var TextBefore = "<span class='categories__item_custom-checkbox' style='background: url(/img/fiolet-square.svg) no-repeat 0 50%, url(/img/fiolet-cross.svg) 100% 50% no-repeat;color: #C283F3;'>"
+          for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+              checkboxesChecked.push(checkboxes[i].value);
+            }
+          }
+          for (var i = 0; i < checkboxesChecked.length; i++) {
+            var newElement = TextBefore + checkboxesChecked[i] + "</span>"
+            $(".categories__item-checked").append(newElement);
+          }
+        }
+      </script>
+
       <h2 class="publications__title">Издания</h2>
-      <a class="categories__title" href="#">Категории</a>
-      <div class="categories__container">
-        <label class="categories__item-container">Бестселлеры
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">          
-          <span class="categories__item_custom-checkbox"></span>
-          <!--
-          <span class="test"></span>
-          -->
-        </label>
-        <label class="categories__item-container">Искусство
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Архитектура
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Дизайн
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Мода
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Детям
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Художественная литература
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Публицистика
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Путеводители
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Философия
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Учебная литература
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
-        <label class="categories__item-container">Журналы и газеты
-          <input class="categories__item_base-checkbox" type="checkbox" name="categories">
-          <span class="categories__item_custom-checkbox"></span>
-        </label>
+      <div class="publications__accordion">
+        <h4 class="publications__accordion_items-title" onclick="getCheckedCheckBoxes()">
+          <p>Категории</p>
+        </h4>
+        <div class="categories__container">
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Бестселлеры">
+            <span class="categories__item_custom-checkbox">Бестселлеры</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Искусство">
+            <span class="categories__item_custom-checkbox">Искусство</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Архитектура">
+            <span class="categories__item_custom-checkbox">Архитектура</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Дизайн">
+            <span class="categories__item_custom-checkbox">Дизайн</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Мода">
+            <span class="categories__item_custom-checkbox">Мода</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Детям">
+            <span class="categories__item_custom-checkbox">Детям</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories"
+              value="Художественная литература">
+            <span class="categories__item_custom-checkbox">Художественная литература</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Публицистика">
+            <span class="categories__item_custom-checkbox">Публицистика</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Путеводители">
+            <span class="categories__item_custom-checkbox">Путеводители</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Философия">
+            <span class="categories__item_custom-checkbox">Философия</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Учебная литература">
+            <span class="categories__item_custom-checkbox">Учебная литература</span>
+          </label>
+          <label class="categories__item-container">
+            <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Журналы и газеты">
+            <span class="categories__item_custom-checkbox">Журналы и газеты</span>
+          </label>
+        </div>
       </div>
-      <!--
+      <div class="categories__item-checked"></div>
+
       <article class="publications__price_container">
         <h3 class="publications__price_title"></h3>
         <div>
@@ -877,6 +901,7 @@
           <input type="text" placeholder="25000">
           руб.
         </div>
+        <!--
         <ul class="publications__list">
           <li class="publications__list_items">
             <img class="publications__list_image" src="/img/slider-4-1.jpg" alt="">
