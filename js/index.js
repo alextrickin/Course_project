@@ -91,21 +91,25 @@ window.addEventListener('DOMContentLoaded', function () {
             document.querySelector(".events__flex-container").style.cssText = "max-height: 1420px; justify-content: space-evenly;"
         }
     };
-
-    //    $(function () {
-    //        $(".publications__accordion").accordion({
-    //            active: true,
-    //            collapsible: true,
-    //            header: ".publications__accordion_items-title",
-    //            heightStyle: 'content'
-    //        });
-    //    });
 })
-function getCheckedCheckBoxes() {
-    $(".publications__categories-title").toggleClass("categories-opened");
-    $(".publications__categories-title").toggleClass("categories-closed");
-    var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
+
+function changeClassCategoriesItem() {
     if ($(".publications__categories-title").hasClass("categories-closed")) {
+        var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
+        for (var i = 0; i < checkboxes.length; i++) {
+            var spanElement = $(checkboxes[i]).next();
+            if (checkboxes[i].checked) {
+                $(spanElement).css({ "display": "block" });
+            } else {
+                $(spanElement).css({ "display": "none" });
+            }
+        }
+    }
+}
+
+function getCheckedCheckBoxes() {
+    var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
+    if ($(".publications__categories-title").hasClass("categories-opened")) {
         for (var i = 0; i < checkboxes.length; i++) {
             var spanElement = $(checkboxes[i]).next();
             $(spanElement).css({ "display": "block" });
@@ -120,4 +124,10 @@ function getCheckedCheckBoxes() {
             }
         }
     }
+}
+
+function changeCategoriesClass() {
+    $(".publications__categories-title").toggleClass("categories-opened");
+    $(".publications__categories-title").toggleClass("categories-closed");
+    getCheckedCheckBoxes()
 }
