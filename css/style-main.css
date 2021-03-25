@@ -1306,7 +1306,7 @@
     }
 */
     .categories__item_base-checkbox {
-      *display: none;
+      display: none;
     }
 
     .categories__item_custom-checkbox {
