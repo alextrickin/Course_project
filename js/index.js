@@ -91,12 +91,13 @@ window.addEventListener('DOMContentLoaded', function () {
             document.querySelector(".events__flex-container").style.cssText = "max-height: 1420px; justify-content: space-evenly;"
         }
     };
-    $(function () {
-        $(".publications__accordion").accordion({
-            active: true,
-            collapsible: true,
-            header: ".publications__accordion_items-title",
-            heightStyle: 'content'
-        });
-    });
+
+//    $(function () {
+//        $(".publications__accordion").accordion({
+//            active: true,
+//            collapsible: true,
+//            header: ".publications__accordion_items-title",
+//            heightStyle: 'content'
+//        });
+//    });
 })

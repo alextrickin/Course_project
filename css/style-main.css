@@ -1249,7 +1249,8 @@
       color: white;
     }
 
-    .publications__accordion_items-title {
+    /*.publications__accordion_items-title, */
+    .publications__categories-title {
       display: block;
       margin-top: 10px;
       margin-bottom: 0;
@@ -1260,15 +1261,39 @@
       border-bottom: 1px solid white;
       font-size: 16px;
       font-family: "OpenSans Bold";
-      background-image: url(/img/down-arrow-white.svg);
+      
       background-repeat: no-repeat;
       background-position: right center;
     }
-
+    .categories__list{
+      min-height: 100%;
+      *transform: scaleY(0);
+      *transform-origin: 0 0;      
+      *transition: .5s ease-in-out;
+      
+    }
+    .categories-closed{
+      background-image: url(/img/down-arrow-white.svg);
+    }
+    .categories-closed+.categories__list{
+      *display: none;
+      *transform: scaleY(0);
+    }
+    .categories-opened{
+      background-image: url(/img/up-arrow-white.svg);
+    }
+    .categories-closed+.categories__opened{
+      *transform: scaleY(1);
+      *display: block;
+    }
+/*
     .publications__accordion .ui-state-active {
       outline: none;
       background-image: url(/img/up-arrow-white.svg);
     }
+
+
+
 
     .categories__container .ui-accordion .ui-accordion-content {
       padding-top: 0;
@@ -1279,9 +1304,9 @@
       position: relative;
       padding: 0;
     }
-
+*/
     .categories__item_base-checkbox {
-      display: none;
+      *display: none;
     }
 
     .categories__item_custom-checkbox {
@@ -1299,9 +1324,22 @@
       background: url(/img/fiolet-square.svg) no-repeat 0 50%, url(/img/fiolet-cross.svg) 100% 50% no-repeat;
       color: #C283F3;
     }
+/*
+    .categories__list {
+      display: none;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 170px;
 
-    .publications__price_title {
+    }
+
+    .categories__list_custom-checkbox {
       border: none;
+    }
+*/
+    .publications__price_title {
+      border: none;      
+      background-image: none;
     }
 
     .publications__price-limits_container {
@@ -1375,3 +1413,15 @@
       font-family: "OpenSans Bold";
       font-size: 16px;
     }
+/*
+    @media (min-width: 768px) {
+      .publications__accordion, .publications__list, .categories__item-checked {
+        display: none;
+      }
+      .categories__list {
+        display: flex;
+      }
+      .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
+        background: url(/img/fiolet-square.svg) no-repeat 0 50%;
+      }
+      */
