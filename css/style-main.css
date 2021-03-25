@@ -1238,11 +1238,11 @@
     /*Издания*/
 
     .publications {
-      margin-top: 30px;
-      padding: 50px 15px 0;
+      margin-top: 30px;      
+      padding: 50px 15px 50px;      
       background-image: url(../img/publications-background.jpg);
       background-repeat: no-repeat;
-      object-fit: cover;
+      background-size: cover;
     }
 
     .publications__title {
@@ -1328,4 +1328,50 @@
 
     .publications__price-limits::-webkit-input-placeholder {
       color: white;
+    }
+
+    .publications__list {
+      display: flex;
+     
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .publications__list_items {
+      margin-top: 50px;
+      max-width: 130px;
+      overflow: hidden;
+      color: white;
+    }
+
+    .publications__list_image {
+      max-height: 143px;
+    }
+
+    .publications__list_name {
+      margin-top: 10px;
+      font-family: "OpenSans Bold";
+      font-size: 12px;
+    }
+
+    .publications__list_autor {
+      font-size: 12px;
+    }
+
+    .publications__list_price {
+      margin-top: 5px;
+      font-family: 'OpenSans Italic';
+      font-size: 12px;
+    }
+
+    .publications__list_button {
+      margin-top: 12px;
+      padding: 10px 20px;
+      min-width: 100%;
+      min-height: 40px;
+      border: 2px solid #9D5CD0;
+      border-radius: 100px;
+      color: white;
+      font-family: "OpenSans Bold";
+      font-size: 16px;
     }

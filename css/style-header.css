@@ -21,6 +21,12 @@
   src: url(/fonts/OpenSans-Bold.ttf);
 }
 
+/*Курсив 400*/
+
+@font-face {
+  font-family: 'OpenSans Italic';
+  src: url(/fonts/OpenSans-Italic.ttf);
+}
 /*Общие настройки*/
 
 * {
