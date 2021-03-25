@@ -1238,8 +1238,8 @@
     /*Издания*/
 
     .publications {
-      margin-top: 30px;      
-      padding: 50px 15px 50px;      
+      margin-top: 30px;
+      padding: 50px 15px 50px;
       background-image: url(../img/publications-background.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -1332,14 +1332,14 @@
 
     .publications__list {
       display: flex;
-     
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
     .publications__list_items {
       margin-top: 50px;
-      max-width: 130px;
+      min-width: 130px;
+      max-width: 30%;
       overflow: hidden;
       color: white;
     }
