@@ -587,7 +587,7 @@
       color: white;
     }
 
-    .swiper-pagination-current, .swiper-pagination-total {
+    .gallery-pagination .swiper-pagination-current, .gallery-pagination .swiper-pagination-total {
       position: relative;
       top: 0px;
       color: white;
@@ -1250,6 +1250,7 @@
     }
 
     .publications__categories-title {
+      position: relative;
       display: block;
       margin-top: 10px;
       margin-bottom: 0;
@@ -1262,6 +1263,11 @@
       font-family: "OpenSans Bold";
       background-repeat: no-repeat;
       background-position: right center;
+      *z-index: 2;
+    }
+
+    .categories__list_item {
+      margin-top: -20px;
     }
 
     .categories-closed {
@@ -1278,12 +1284,13 @@
     }
 
     .categories__item_base-checkbox {
-      display: none;
+      *display: none;
+      opacity: 0;
     }
 
     .categories__item_custom-checkbox {
       position: relative;
-      display: block;
+      *display: block;
       padding: 10px 0 10px 20px;
       top: 0;
       left: 0px;
@@ -1292,9 +1299,23 @@
       background: url(/img/white-square.svg) no-repeat 0 50%;
     }
 
+    .categories__item_custom-checkbox:hover {
+      background: url(/img/fiolet-square.svg) no-repeat 0 50%;
+      color: #C283F3;
+    }
+
+    .categories__item_custom-checkbox:active {
+      background: url(/img/fiolet-square-clear.svg) no-repeat 0 50%;
+      color: #C283F3;
+    }
+
     .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
       background: url(/img/fiolet-square.svg) no-repeat 0 50%, url(/img/fiolet-cross.svg) 100% 50% no-repeat;
       color: #C283F3;
+    }
+
+    .categories__item_base-checkbox:focus+.categories__item_custom-checkbox {
+      outline: 2px solid #7943A4;
     }
 
     .publications__price_title {
@@ -1376,10 +1397,95 @@
       font-size: 12px;
     }
 
+    .publications__list_button:hover {
+      background-color: #9D5CD0;
+    }
+
+    .publications__list_button:focus {
+      border-width: 5px;
+      border-style: double;
+    }
+
+    .publications-swiper {
+      display: none;
+      padding-top: 60px;
+    }
+
+    .publications-wrapper {
+      padding-left: 25px;
+    }
+
+    .publications-slide__description {
+      margin-top: 10px;
+      width: 287px;
+      max-height: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .publications-swiper-button-prev::after, .publications-swiper-button-next::after {
+      display: flex;
+      position: relative;
+      top: -210px;
+      min-width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      visibility: visible;
+      font-family: FontAwesome;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 50px;
+      color: white;
+      background-color: #666;
+    }
+
+    .publications-swiper-button-prev::after {
+      left: -7px;
+      content: "\f104";
+    }
+
+    .publications-swiper-button-next::after {
+      left: -520px;
+      content: "\f105";
+    }
+
+    .publications-swiper-button-prev:hover::after, .publications-swiper-button-next:hover::after {
+      color: white;
+      background-color: #9D5CD0;
+    }
+
+    .publications-swiper-button-prev:focus::after, .publications-swiper-button-next:focus::after {
+      *color: black;
+      background-color: white;
+      border: 2px solid #7943A4;
+    }
+
+    .publications-swiper-button-prev:active::after, .publications-swiper-button-next:active::after {
+      color: white;
+      background-color: #7943A4;
+      border: 2px solid #D1A9F0;
+    }
+
+    .publications-swiper-pagination {
+      position: relative;
+      top: -480px;
+      left: -265px;
+      color: white;
+    }
+
+    .publications-swiper-pagination .swiper-pagination-current, .publications-swiper-pagination .swiper-pagination-total {
+      position: relative;
+      *top: 0px;
+      color: white;
+      font-size: 16px;
+    }
+
     @media (min-width: 768px) {
       .publications {
         margin-top: 80px;
-        padding: 100px 50px 80px 50px;
+        padding: 100px 50px 65px 50px;
       }
       .publications__categories-title {
         margin-top: 32px;
@@ -1395,6 +1501,12 @@
         justify-content: space-evenly;
         justify-content: space-between;
       }
+      .publications__list_items {
+        max-width: 100%;
+      }
+      .publications__list_button {
+        min-width: 120px;
+      }
       .categories-closed, .categories-opened {
         background-image: none;
       }
@@ -1409,5 +1521,23 @@
       }
       .publications__price_title {
         margin-top: 30px;
+      }
+      .publications__list {
+        display: none;
+      }
+      .publications-swiper {
+        display: block;
+      }
+      .publications__list_image {
+        max-height: 320px;
+      }
+      .publications__list_name, .publications__list_autor, .publications__list_price {
+        font-size: 16px;
+      }
+      .publications__list_name {
+        margin-top: 0;
+      }
+      .publications__list_price {
+        text-align: right;
       }
     }

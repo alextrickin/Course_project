@@ -15,18 +15,16 @@ window.addEventListener('DOMContentLoaded', function () {
             prevEl: '.main-top-button-next',
         },
     });
+
     var gallery_Swiper = new Swiper('.gallery-swiper', {
         // Optional parameters    
         loop: false,
-
-
         // If we need pagination
         pagination: {
             el: '.gallery-pagination',
             clickable: 'true',
             type: 'fraction'
         },
-
         // Navigation arrows
         navigation: {
             nextEl: '.gallery-button-prev',
@@ -72,9 +70,37 @@ window.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    $(function () {
 
+    var publications_Swiper = new Swiper('.publications-swiper', {
+        // Optional parameters    
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.publications-swiper-button-prev',
+            prevEl: '.publications-swiper-button-next',
+        },
+        // If we need pagination
+        pagination: {
+            el: '.publications-swiper-pagination',
+            clickable: 'true',
+            type: 'fraction'
+        },
+
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 50
+            },
+            640: {
+                spaceBetween: 34
+            },
+        },
     });
+
 
     $(function () {
         $(".catalog__accordion").accordion({
@@ -91,6 +117,8 @@ window.addEventListener('DOMContentLoaded', function () {
             document.querySelector(".events__flex-container").style.cssText = "max-height: 1420px; justify-content: space-evenly;"
         }
     };
+
+
 })
 
 function changeClassCategoriesItem() {
@@ -147,3 +175,5 @@ function changeCategoriesClass() {
 window.onresize = function () {
     getCheckedCheckBoxes()
 }
+
+//window.addEventListener('focusin', event => console.log(event.target));

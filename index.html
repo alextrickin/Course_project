@@ -816,52 +816,52 @@
     <section class="publications">
       <h2 class="publications__title">Издания</h2>
       <h4 class="publications__categories-title categories-closed" onclick="changeCategoriesClass()">
-        <p>Категории</p>
+        Категории
       </h4>
       <ul class="categories__list">
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container categories__list_item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Бестселлеры"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Бестселлеры</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Искусство"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Искусство</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Архитектура"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Архитектура</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Дизайн" checked
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Дизайн</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Мода"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Мода</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Детям"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Детям</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories"
               value="Художественная литература" onchange="changeClassCategoriesItem()">
@@ -869,35 +869,35 @@
               литература</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Публицистика"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Публицистика</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Путеводители"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Путеводители</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Философия"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Философия</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Учебная литература"
               onchange="changeClassCategoriesItem()">
             <span class="categories__item_custom-checkbox">Учебная литература</span>
           </label>
         </li>
-        <li>
+        <li class="categories__list_item">
           <label class="categories__item-container">
             <input class="categories__item_base-checkbox" type="checkbox" name="categories" value="Журналы и газеты"
               onchange="changeClassCategoriesItem()">
@@ -907,7 +907,7 @@
 
       </ul>
 
-      <article class="publications__price_container">
+      <section class="publications__price_container">
         <h4 class="publications__price_title publications__accordion_items-title">Цена</h4>
         <div class="publications__price-limits_container">
           От
@@ -968,7 +968,80 @@
             <button class="publications__list_button">Заказать</button>
           </li>
         </ul>
-      </article>
+
+        <div class="publications-swiper swiper-container">
+          <div class="publications-wrapper swiper-wrapper">
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-1.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Искусство цвета</p>
+                <p class="publications__list_autor">Иттен, Иоханнес</p>
+                <p class="publications__list_price">620 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-2.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Типографика</p>
+                <p class="publications__list_autor">Рудер, Эмиль </p>
+                <p class="publications__list_price">2 450 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-3.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Книга про буквы</p>
+                <p class="publications__list_autor">Гордон, Юрий </p>
+                <p class="publications__list_price">2 200 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-4.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Николай Ильин</p>
+                <p class="publications__list_autor">Кричевский, Влади...</p>
+                <p class="publications__list_price">1 100 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-5.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Модульные сетки...</p>
+                <p class="publications__list_autor">Мюллер-Брокманн...</p>
+                <p class="publications__list_price">1 450 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-6.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Эволюция графич...</p>
+                <p class="publications__list_autor">Хеллер, Чваст</p>
+                <p class="publications__list_price">3 200 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+            <div class="publications-slide swiper-slide publications__list_items">
+              <img class="publications__list_image" src="/img/slider-4-7.jpg" alt="">
+              <div class="publications-slide__description">
+                <p class="publications__list_name">Искусство и визуа...</p>
+                <p class="publications__list_autor">Арнхейм, Рудольф</p>
+                <p class="publications__list_price">2 200 руб.</p>
+              </div>
+              <button class="publications__list_button">Заказать</button>
+            </div>
+          </div>
+
+          <div class="publications-swiper-pagination swiper-pagination"></div>
+          <div class="publications-swiper-button-prev swiper-button-prev"></div>
+          <div class="publications-swiper-button-next swiper-button-next"></div>
+
+        </div>
+      </section>
 
     </section>
 
