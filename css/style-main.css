@@ -1007,7 +1007,7 @@
         right: 30px;
       }
       .catalog__artists-description {
-        margin-top: 40px;
+        margin-top: 50px;
       }
       .catalog__artists-description_title {
         padding-top: 30px;
@@ -1300,7 +1300,7 @@
     .publications__price_title {
       margin-top: 22px;
       margin-bottom: 12px;
-      color: white;      
+      color: white;
     }
 
     .publications__price-limits_container {
@@ -1377,25 +1377,37 @@
     }
 
     @media (min-width: 768px) {
-      /*
-      .publications__accordion, .publications__list, .categories__item-checked {
-        display: none;
+      .publications {
+        margin-top: 80px;
+        padding: 100px 50px 80px 50px;
       }
-      */
+      .publications__categories-title {
+        margin-top: 32px;
+        padding: 0;
+        border: none;
+      }
       .categories__list {
         display: flex;
+        margin-top: 5px;
+        height: 130px;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 160px;
+        justify-content: space-evenly;
+        justify-content: space-between;
       }
       .categories-closed, .categories-opened {
         background-image: none;
       }
+      .categories__item_custom-checkbox {
+        margin-right: 60px;
+        font-size: 16px;
+        line-height: 12px;
+        border: none;
+      }
       .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
         background: url(/img/fiolet-square.svg) no-repeat 0 50%;
       }
-      .categories__item_custom-checkbox{
-        border: none;
+      .publications__price_title {
+        margin-top: 30px;
       }
-      
     }
