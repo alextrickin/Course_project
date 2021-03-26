@@ -1298,8 +1298,9 @@
     }
 
     .publications__price_title {
-      border: none;
-      background-image: none;
+      margin-top: 22px;
+      margin-bottom: 12px;
+      color: white;      
     }
 
     .publications__price-limits_container {
@@ -1347,12 +1348,13 @@
     }
 
     .publications__list_name {
-      margin-top: 10px;
+      margin-top: 5px;
       font-family: "OpenSans Bold";
       font-size: 12px;
     }
 
     .publications__list_autor {
+      margin-top: 5px;
       font-size: 12px;
     }
 
@@ -1371,18 +1373,29 @@
       border-radius: 100px;
       color: white;
       font-family: "OpenSans Bold";
-      font-size: 16px;
+      font-size: 12px;
     }
 
-    /*
     @media (min-width: 768px) {
+      /*
       .publications__accordion, .publications__list, .categories__item-checked {
         display: none;
       }
+      */
       .categories__list {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 160px;
+      }
+      .categories-closed, .categories-opened {
+        background-image: none;
       }
       .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
         background: url(/img/fiolet-square.svg) no-repeat 0 50%;
       }
-      */
+      .categories__item_custom-checkbox{
+        border: none;
+      }
+      
+    }
