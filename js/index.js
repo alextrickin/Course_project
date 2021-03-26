@@ -94,40 +94,56 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 function changeClassCategoriesItem() {
-    if ($(".publications__categories-title").hasClass("categories-closed")) {
-        var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
-        for (var i = 0; i < checkboxes.length; i++) {
-            var spanElement = $(checkboxes[i]).next();
-            if (checkboxes[i].checked) {
-                $(spanElement).css({ "display": "block" });
-            } else {
-                $(spanElement).css({ "display": "none" });
+    var currentWidth = document.body.clientWidth + 17
+    if (currentWidth < 768) {
+        if ($(".publications__categories-title").hasClass("categories-closed")) {
+            var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
+            for (var i = 0; i < checkboxes.length; i++) {
+                var spanElement = $(checkboxes[i]).next();
+                if (checkboxes[i].checked) {
+                    $(spanElement).css({ "display": "block" });
+                } else {
+                    $(spanElement).css({ "display": "none" });
+                }
             }
         }
     }
 }
 
 function getCheckedCheckBoxes() {
+    var currentWidth = document.body.clientWidth + 17
     var checkboxes = document.getElementsByClassName("categories__item_base-checkbox");
-    if ($(".publications__categories-title").hasClass("categories-opened")) {
-        for (var i = 0; i < checkboxes.length; i++) {
-            var spanElement = $(checkboxes[i]).next();
-            $(spanElement).css({ "display": "block" });
+    if (currentWidth < 768) {
+        if ($(".publications__categories-title").hasClass("categories-opened")) {
+            for (var i = 0; i < checkboxes.length; i++) {
+                var spanElement = $(checkboxes[i]).next();
+                $(spanElement).css({ "display": "block" });
+            }
+        } else {
+            for (var i = 0; i < checkboxes.length; i++) {
+                var spanElement = $(checkboxes[i]).next();
+                if (checkboxes[i].checked) {
+                    $(spanElement).css({ "display": "block" });
+                } else {
+                    $(spanElement).css({ "display": "none" });
+                }
+            }
         }
     } else {
         for (var i = 0; i < checkboxes.length; i++) {
             var spanElement = $(checkboxes[i]).next();
-            if (checkboxes[i].checked) {
-                $(spanElement).css({ "display": "block" });
-            } else {
-                $(spanElement).css({ "display": "none" });
-            }
+            $(spanElement).css({ "display": "block" });
         }
+
     }
 }
 
 function changeCategoriesClass() {
     $(".publications__categories-title").toggleClass("categories-opened");
     $(".publications__categories-title").toggleClass("categories-closed");
+    getCheckedCheckBoxes()
+}
+
+window.onresize = function () {
     getCheckedCheckBoxes()
 }
