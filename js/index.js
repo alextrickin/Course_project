@@ -99,19 +99,19 @@ window.addEventListener('DOMContentLoaded', function () {
             640: {
                 spaceBetween: 34
             },
-        },        
+        },
     });
 
 
     var publications_Swiper = new Swiper('.projects-swiper', {
         // Optional parameters    
         loop: false,
-        slidesPerView: 2,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 34,
         navigation: {
             nextEl: '.projects-swiper-button-prev',
             prevEl: '.projects-swiper-button-next',
-        },       
+        },
         breakpoints: {
             1920: {
                 slidesPerView: 3,
@@ -119,12 +119,13 @@ window.addEventListener('DOMContentLoaded', function () {
             },
             1024: {
                 slidesPerView: 2,
+                spaceBetween: 50
+            },
+            768: {
+                slidesPerView: 2,
                 spaceBetween: 34
             },
-            640: {
-                spaceBetween: 34
-            },
-        },        
+        },
     });
 
 
