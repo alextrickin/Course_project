@@ -1545,18 +1545,47 @@
     @media (min-width: 1024px) {
       .publications {
         display: flex;
+        position: relative;
+        padding: 90px 55px 80px 45px;
+        *height: 800px;
         flex-wrap: wrap;
         flex-direction: column;
       }
-      .categories__list {
-        display: block;
-        *max-width: 250px;
+      .publications__categories-title {
+        margin-top: 35px;
       }
-      .publications__price_container {
-        *padding-top: 250px;
-        *max-width: 250px;
+      .categories__list {
+        min-height: 385px;
+        max-width: 280px;
+        *display: block;
+      }
+      .categories__item_custom-checkbox {
+        margin-right: 0;
+      }
+      .publications__price_title {
+        margin-top: 35px;
       }
       .publications-swiper {
+        position: absolute;
         max-width: 650px;
+        top: 60px;
+        left: 320px;
+      }
+      .publications-swiper-pagination {
+        top: -485px;
+        left: -238px;
+      }
+      .publications-swiper-button-prev::after {
+        *top: -0;
+        left: 15px;
+      }
+      .publications-swiper-button-prev::after, .publications-swiper-button-next::after {
+        top: -215px;
+      }
+      .publications-swiper-button-next::after {
+        left: -490px;
+      }
+      .publications__list_button {
+        margin-top: 18px;
       }
     }
