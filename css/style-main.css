@@ -1218,7 +1218,7 @@
 
     @media (min-width: 1920px) {
       .events {
-        padding: 130px 160px 0;
+        padding: 100px 160px 0;
       }
       .events__flex-slide {
         max-width: 500px;
@@ -1232,6 +1232,10 @@
       .events-slide__link {
         left: 30px;
         top: 620px;
+      }
+      .events__button{
+        margin-top: 60px;
+
       }
     }
 
