@@ -1670,16 +1670,9 @@
       color: white;
     }
 
-    .projects-slide {
-      filter: grayscale(100%);
-    }
-
-    .projects-slide:hover {
-      filter: none;
-    }
-
     .projects__content_link {
       font-family: "OpenSans SemiBold";
+      font-size: 16px;
       color: #9D5CD0;
     }
 
@@ -1691,6 +1684,19 @@
 
     .projects-swiper {
       margin-top: 10px;
+    }
+
+    .projects-wrapper {
+      *margin: 0 40px;
+    }
+
+    .projects-slide {
+      filter: grayscale(100%);
+      text-align: center;
+    }
+
+    .projects-slide__image {
+      max-height: 65px;
     }
 
     .projects-swiper-button-prev::after, .projects-swiper-button-next::after {
@@ -1710,7 +1716,7 @@
     }
 
     .projects-swiper-button-prev::after {
-      left: -10px;
+      left: -8px;
       content: "\f104";
     }
 
@@ -1719,7 +1725,62 @@
       content: "\f105";
     }
 
-    .projects-slide__image {
-      margin-left: 16%;
-      height: 65px;
+    .projects-slide:hover {
+      filter: none;
+    }
+
+    .projects-slide__image:hover {
+      border: 1px solid #9D5CD0;
+    }
+
+    @media (min-width: 768px) {
+      .projects {
+        padding: 90px 46px;
+      }
+      .projects__content {
+        margin-top: 30px;
+      }
+      .projects__content {
+        width: 95%;
+      }
+      .projects__partners_title {
+        margin-top: 30px;
+        font-size: 24px;
+      }
+      .projects-swiper {
+        margin-top: 25px;
+      }
+      .projects-slide__image {
+        width: 264px;
+        min-height: 106px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .projects__content {
+        width: 100%;
+      }
+      .projects__partners_title {
+        margin-top: 20px;
+      }
+      .projects-slide__image {
+        width: 384px;
+        min-height: 128px;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .projects {
+        padding: 90px 160px;
+      }
+      .projects__content {
+        width: 70%;
+      }
+      .projects__content_information {
+        background-image: url(/img/information.svg);
+      }
+      .projects-slide__image {
+        width: 450px;
+        min-height: 150px;
+      }
     }

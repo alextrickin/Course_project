@@ -106,8 +106,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var publications_Swiper = new Swiper('.projects-swiper', {
         // Optional parameters    
         loop: false,
-        slidesPerView: 1,
-        spaceBetween: 34,
+        spaceBetween: 0,
         navigation: {
             nextEl: '.projects-swiper-button-prev',
             prevEl: '.projects-swiper-button-next',
@@ -115,15 +114,15 @@ window.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             1920: {
                 slidesPerView: 3,
-                spaceBetween: 50
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 50
             },
             768: {
                 slidesPerView: 2,
-                spaceBetween: 34
+            },
+            640: {
+                slidesPerView: 2,
             },
         },
     });
