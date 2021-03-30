@@ -134,6 +134,56 @@ window.addEventListener('DOMContentLoaded', function () {
             heightStyle: 'content'
         });
     });
+
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var contactMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.758463, 37.601079],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 15
+        });
+        
+
+        var myCircle = new ymaps.Circle([
+            // Координаты центра круга.
+            [55.757485, 37.600370],
+            // Радиус круга в метрах.
+            25
+        ], {
+            // Описываем свойства круга.
+            // Содержимое балуна.
+            //balloonContent: "Радиус круга - 10 км",
+            // Содержимое хинта.
+            //hintContent: "Подвинь меня"
+        }, {
+            // Задаем опции круга.
+            // Включаем возможность перетаскивания круга.
+            //draggable: true,
+            // Цвет заливки.
+            // Последний байт (77) определяет прозрачность.
+            // Прозрачность заливки также можно задать используя опцию "fillOpacity".
+            fillColor: "#9D5CD0",
+            // Цвет обводки.
+            strokeColor: "#9D5CD0",
+            // Прозрачность обводки.
+            //strokeOpacity: 1,
+            // Ширина обводки в пикселях.
+            //strokeWidth: 5
+        });
+    
+        // Добавляем круг на карту.
+        contactMap.geoObjects.add(myCircle);
+
+
+
+    }
+
     document.querySelector(".events__button").onclick = function () {
         document.querySelector(".events__button").style.cssText = "display: none;"
         if ((768 <= window.innerWidth) & (window.innerWidth < 1024)) {
