@@ -1940,4 +1940,29 @@
         margin-top: 30px;
         height: 700px;
       }
-    }
+      @media (min-width: 1024px) {
+        .contacts__title {
+          margin-left: 40px;
+        }
+        .contacts__call-back {
+          padding: 120px 0 104px 45px;
+        }
+      }
+      @media (min-width: 1920px) {
+        .contacts__title {
+          margin-left: 160px;
+        }
+        .contacts__call-back {
+          padding: 124px 0 120px 165px;
+          width: 520px;
+        }
+        .contacts__call-back_name, .contacts__call-back_phone {
+          width: 380px;
+        }
+        .contacts__socials_whatsapp, .contacts__socials_telegram {
+          margin-top: 18px;
+          margin-right: 2px;
+          width: 40px;
+          height: 40px;
+        }
+      }
