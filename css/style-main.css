@@ -1812,16 +1812,28 @@
 
     .contacts__map {
       margin: 0 -13px;
-      width: 320px;
-      height: 335px
+      width: 100%;
+      height: 335px;
+    }
+
+    .ymaps-2-1-78-ground-pane {
+      filter: grayscale(1);
+      -ms-filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
     }
 
     .contacts__call-back_title {
       margin-top: 25px;
       padding-bottom: 5px;
+      font-family: 'OpenSans Regular';
+      font-style: normal;
+      font-weight: normal;
     }
 
     .contacts__call-back_name, .contacts__call-back_phone {
+      display: block;
       margin-top: 20px;
       padding-left: 20px;
       width: 265px;
@@ -1831,6 +1843,7 @@
     }
 
     .contacts__call-back_button {
+      display: block;
       margin-top: 20px;
       padding: 11px 32px;
       font-family: 'OpenSans Bold';
@@ -1838,6 +1851,13 @@
       color: #9D5CD0;
       border: 2px solid #9D5CD0;
       border-radius: 100px;
+    }
+
+    .contacts__call-back_address {
+      margin-top: 10px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
     }
 
     .contacts__socials {
@@ -1859,4 +1879,65 @@
     .contacts__socials_telegram {
       margin-left: 15px;
       background-image: url(/img/telegram.svg);
+    }
+
+    @media (min-width: 768px) {
+      .contacts {
+        padding: 0;
+      }
+      .contacts__title {
+        margin-left: 50px;
+      }
+      .contacts__address-320_container {
+        display: none;
+      }
+      .contacts__call-back_address-container {
+        display: block;
+      }
+      .contacts_container {
+        flex-direction: row;
+        box-sizing: content-box;
+      }
+      .contacts__call-back {
+        position: absolute;
+        margin-top: 30px;
+        padding: 124px 0 104px 50px;
+        width: 380px;
+        border: 1px solid #CACACA;
+        background-color: white;
+        z-index: 1;
+      }
+      .contacts__call-back_title {
+        margin-top: 40px;
+        font-size: 24px;
+      }
+      .contacts__call-back_name, .contacts__call-back_phone {
+        margin-top: 12px;
+        width: 310px;
+      }
+      .contacts__call-back_phone {
+        margin-top: 25px;
+      }
+      .contacts__call-back_button {
+        margin-top: 22px;
+        padding: 17px 33px;
+        font-size: 18px;
+      }
+      .contacts__socials {
+        margin-top: 40px;
+      }
+      .contacts__socials_title {
+        font-size: 24px;
+      }
+      .contacts__socials_whatsapp, .contacts__socials_telegram {
+        margin-top: 20px;
+        margin-right: 12px;
+        width: 60px;
+        height: 60px;
+      }
+      .contacts__map {
+        margin: 0;
+        margin-top: 30px;
+        height: 700px;
+      }
     }
