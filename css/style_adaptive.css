@@ -528,7 +528,7 @@
     border: none;
   }
   .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
-    background: url(/img/fiolet-square.svg) no-repeat 0 50%;
+    background: url(../img/fiolet-square.svg) no-repeat 0 50%;
   }
   .publications__price_title {
     margin-top: 30px;
@@ -687,7 +687,7 @@
     width: 70%;
   }
   .projects__content_information {
-    background-image: url(/img/information.svg);
+    background-image: url(../img/information.svg);
   }
   .projects-slide__image {
     width: 450px;

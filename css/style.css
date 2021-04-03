@@ -1,11 +1,11 @@
-/*Fonts*/
+﻿/*Fonts*/
 
 
 /*Обычный 400*/
 
 @font-face {
   font-family: 'OpenSans Regular';
-  src: url(/fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans_Regular.ttf);
 }
 
 
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'OpenSans SemiBold';
-  src: url(/fonts/OpenSans-SemiBold.ttf);
+  src: url(fonts/OpenSans_SemiBold.ttf);
 }
 
 
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'OpenSans Bold';
-  src: url(/fonts/OpenSans-Bold.ttf);
+  src: url(fonts/OpenSans_Bold.ttf);
 }
 
 
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: 'OpenSans Italic';
-  src: url(/fonts/OpenSans-Italic.ttf);
+  src: url(fonts/OpenSans_Italic.ttf);
 }
 
 
@@ -311,7 +311,7 @@ ul {
 .main-top__find-container_find-button {
   min-width: 23px;
   min-height: 23px;
-  background-image: url(/img/magnifier.svg);
+  background-image: url(../img/magnifier.svg);
   background-repeat: no-repeat;
   background-size: contain;
   outline-offset: 3px;
@@ -322,7 +322,7 @@ ul {
 }
 
 .main-top__find-container:hover .main-top__find-container_find-button {
-  background-image: url(/img/magnifier-purple.svg);
+  background-image: url(../img/magnifier-purple.svg);
 }
 
 .main-top__find-container_input-field {
@@ -648,7 +648,7 @@ ul {
   max-width: 215px;
   width: 55%;
   min-width: 100px;
-  content: url(/img/magnifier+.svg);
+  content: url(../img/magnifier+.svg);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -894,14 +894,14 @@ ul {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url(/img/down-arrow.svg);
+  background-image: url(../img/down-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
 }
 
 .catalog__accordion:hover .catalog__accordion_items-title:hover .ui-accordion-header-icon {
-  background-image: url(/img/down-arrow-purple.svg);
+  background-image: url(../img/down-arrow-purple.svg);
 }
 
 .catalog__accordion:active .catalog__accordion_items-title:active .ui-accordion-header-icon {
@@ -917,7 +917,7 @@ ul {
 }
 
 .catalog__accordion .ui-accordion-header-active .ui-accordion-header-icon {
-  background-image: url(/img/up-arrow.svg);
+  background-image: url(../img/up-arrow.svg);
 }
 
 .ui-widget input,
@@ -1158,11 +1158,11 @@ ul {
 }
 
 .categories-closed {
-  background-image: url(/img/down-arrow-white.svg);
+  background-image: url(../img/down-arrow-white.svg);
 }
 
 .categories-opened {
-  background-image: url(/img/up-arrow-white.svg);
+  background-image: url(../img/up-arrow-white.svg);
 }
 
 .categories__item-container {
@@ -1181,21 +1181,21 @@ ul {
   left: 0px;
   color: white;
   border-bottom: 1px solid white;
-  background: url(/img/white-square.svg) no-repeat 0 50%;
+  background: url(../img/white-square.svg) no-repeat 0 50%;
 }
 
 .categories__item_custom-checkbox:hover {
-  background: url(/img/fiolet-square.svg) no-repeat 0 50%;
+  background: url(../img/fiolet-square.svg) no-repeat 0 50%;
   color: #C283F3;
 }
 
 .categories__item_custom-checkbox:active {
-  background: url(/img/fiolet-square-clear.svg) no-repeat 0 50%;
+  background: url(../img/fiolet-square-clear.svg) no-repeat 0 50%;
   color: #C283F3;
 }
 
 .categories__item_base-checkbox:checked+.categories__item_custom-checkbox {
-  background: url(/img/fiolet-square.svg) no-repeat 0 50%, url(/img/fiolet-cross.svg) 100% 50% no-repeat;
+  background: url(../img/fiolet-square.svg) no-repeat 0 50%, url(../img/fiolet-cross.svg) 100% 50% no-repeat;
   color: #C283F3;
 }
 
@@ -1406,7 +1406,7 @@ ul {
   width: 16px;
   height: 16px;
   cursor: help;
-  background-image: url(/img/information-white.svg);
+  background-image: url(../img/information-white.svg);
 }
 
 .projects__content_information:hover::before {
@@ -1626,12 +1626,12 @@ ul {
 }
 
 .contacts__socials_whatsapp {
-  background-image: url(/img/whatsapp.svg);
+  background-image: url(../img/whatsapp.svg);
 }
 
 .contacts__socials_telegram {
   margin-left: 15px;
-  background-image: url(/img/telegram.svg);
+  background-image: url(../img/telegram.svg);
 }
 
 
@@ -1672,15 +1672,15 @@ ul {
 }
 
 .footer__socials-link_vk {
-  background-image: url(/img/vk.svg);
+  background-image: url(../img/vk.svg);
 }
 
 .footer__socials-link_instagram {
-  background-image: url(/img/instagram.svg);
+  background-image: url(../img/instagram.svg);
 }
 
 .footer__socials-link_facebook {
-  background-image: url(/img/facebook.svg);
+  background-image: url(../img/facebook.svg);
 }
 
 .footer__logo {
