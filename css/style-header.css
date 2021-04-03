@@ -1,11 +1,13 @@
 /*Fonts*/
 
+
 /*Обычный 400*/
 
 @font-face {
   font-family: 'OpenSans Regular';
   src: url(/fonts/OpenSans-Regular.ttf);
 }
+
 
 /*Полужирный 600*/
 
@@ -14,6 +16,7 @@
   src: url(/fonts/OpenSans-SemiBold.ttf);
 }
 
+
 /*Жирный 700*/
 
 @font-face {
@@ -21,12 +24,14 @@
   src: url(/fonts/OpenSans-Bold.ttf);
 }
 
+
 /*Курсив 400*/
 
 @font-face {
   font-family: 'OpenSans Italic';
   src: url(/fonts/OpenSans-Italic.ttf);
 }
+
 
 /*Общие настройки*/
 
@@ -48,7 +53,8 @@ button {
   background-color: transparent;
 }
 
-button:active, button:focus {
+button:active,
+button:focus {
   outline: none;
 }
 
@@ -111,6 +117,7 @@ ul {
   max-width: 1920px;
   min-width: 320px;
 }
+
 
 /*Header*/
 
