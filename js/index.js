@@ -171,7 +171,11 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector(".events__flex-container").style.cssText = "max-height: 1420px; justify-content: space-evenly;"
     }
   };
-})
+
+  $('.catalog__accordion_button').click(function() {
+    $('.catalog__artists-description_title').html($(this).html())
+  });
+});
 
 function changeClassCategoriesItem() {
   var currentWidth = document.body.clientWidth + 17
@@ -223,6 +227,8 @@ function changeCategoriesClass() {
   $(".publications__categories-title").toggleClass("categories-closed");
   getCheckedCheckBoxes()
 }
+
+
 
 window.onresize = function() {
   getCheckedCheckBoxes()
