@@ -165,7 +165,7 @@ window.addEventListener('DOMContentLoaded', function() {
   document.querySelector(".events__button").onclick = function() {
     document.querySelector(".events__button").style.cssText = "display: none;"
     if ((768 <= window.innerWidth) & (window.innerWidth < 1024)) {
-      document.querySelector(".events__flex-container").style.cssText = "max-height: 2130px; "
+      document.querySelector(".events__flex-container").style.cssText = "max-height: 2140px; "
     }
     if (1024 <= window.innerWidth) {
       document.querySelector(".events__flex-container").style.cssText = "max-height: 1420px; justify-content: space-evenly;"
