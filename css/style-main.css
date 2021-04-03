@@ -2051,6 +2051,12 @@
   background-color: black;
 }
 
+.footer__socials-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__socials-link_vk,
 .footer__socials-link_instagram,
 .footer__socials-link_facebook {
@@ -2064,12 +2070,10 @@
 }
 
 .footer__socials-link_instagram {
-  margin-left: 28px;
   background-image: url(/img/instagram.svg);
 }
 
 .footer__socials-link_facebook {
-  margin-left: 28px;
   background-image: url(/img/facebook.svg);
 }
 
