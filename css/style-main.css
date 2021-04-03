@@ -1879,6 +1879,12 @@
   border-radius: 100px;
 }
 
+.contacts__call-back_name:hover,
+.contacts__call-back_phone:hover {
+  border: 1px solid #9D5CD0;
+  background-color: #D1A9F0;
+}
+
 .contacts__call-back_button {
   display: block;
   margin-top: 20px;
@@ -1888,6 +1894,11 @@
   color: #9D5CD0;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+}
+
+.contacts__call-back_button:hover {
+  color: white;
+  background-color: #9D5CD0;
 }
 
 .contacts__call-back_address {
@@ -1908,6 +1919,12 @@
   width: 50px;
   height: 50px;
   background-size: contain;
+  border-radius: 100px;
+}
+
+.contacts__socials_whatsapp:hover,
+.contacts__socials_telegram:hover {
+  box-shadow: 0 0 5px 2px #9D5CD0;
 }
 
 .contacts__socials_whatsapp {
