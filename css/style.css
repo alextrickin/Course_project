@@ -60,7 +60,6 @@ button:focus {
 
 figure {
   margin: 0;
-  *max-width: 290px;
   display: block;
   margin: auto;
 }
@@ -741,7 +740,6 @@ ul {
 }
 
 .gallery__explanation {
-  *margin-top: 10px;
   padding-bottom: 70px;
   font-size: 16px;
   line-height: 32px;
@@ -1173,13 +1171,11 @@ ul {
 }
 
 .categories__item_base-checkbox {
-  *display: none;
   opacity: 0;
 }
 
 .categories__item_custom-checkbox {
   position: relative;
-  *display: block;
   padding: 10px 0 10px 20px;
   top: 0;
   left: 0px;
@@ -1215,7 +1211,6 @@ ul {
 
 .publications__price-limits_container {
   margin-top: 5px;
-  *padding: 0 10px;
   padding-left: 10px;
   width: 260px;
   font-size: 16px;
@@ -1366,7 +1361,6 @@ ul {
 
 .publications-swiper-button-prev:focus::after,
 .publications-swiper-button-next:focus::after {
-  *color: black;
   background-color: white;
   border: 2px solid #7943A4;
 }
@@ -1388,7 +1382,6 @@ ul {
 .publications-swiper-pagination .swiper-pagination-current,
 .publications-swiper-pagination .swiper-pagination-total {
   position: relative;
-  *top: 0px;
   color: white;
   font-size: 16px;
 }
@@ -1454,10 +1447,6 @@ ul {
 
 .projects-swiper {
   margin-top: 10px;
-}
-
-.projects-wrapper {
-  *margin: 0 40px;
 }
 
 .projects-slide {
