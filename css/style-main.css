@@ -1885,6 +1885,16 @@
   background-color: #D1A9F0;
 }
 
+.contacts__call-back_name:hover::-moz-placeholder,
+.contacts__call-back_phone:hover::-moz-placeholder {
+  color: white;
+}
+
+.contacts__call-back_name:hover::-webkit-input-placeholder,
+.contacts__call-back_phone:hover::-webkit-input-placeholder {
+  color: white;
+}
+
 .contacts__call-back_button {
   display: block;
   margin-top: 20px;
